@@ -31,7 +31,7 @@ void    *ft_memcpy(const void	*source, void	*dest, size_t	num);
 //char *ft_memchr (const char    *str, int  byte_x, size_t   byte_lenght);
 int	ft_memcmp(const void	*str1, const void	*str2, size_t	byte_size);
 char	*ft_strdup(const char	*s);
-//----------
+//-------------------------------------
 void	ft_putchar_fd(char c, int fd);
 void ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
@@ -43,4 +43,11 @@ void	ft_striteri(char	*s, void (*f)(unsigned int, char*));
 char	*ft_strmapi(char const	*s, char (*f)(unsigned int, char));
 char	*ft_strjoin(char const *s1, char const *s2);
 char	**ft_split(char const	*s, char c);
+//-------------------------------------
+typedef struct s_list
+{
+    void *content;
+    struct s_list *next;
+} t_list;
+t_list *ft_lstnew(void *content);
 #endif  // Termina el bloque de la guarda
