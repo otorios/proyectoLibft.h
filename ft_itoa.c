@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include "libft.h"
 //#include <stdio.h>
 
 char	*print_int_min(void)
@@ -21,7 +22,7 @@ char	*print_int_min(void)
 
 	min_str = "-2147483648";
 	i = 0;
-	min_int = (char *)malloc(12 * sizeof(char));
+	min_int = (char *)ft_calloc(12, sizeof(char));
 	if (!min_int)
 		return (NULL);
 	while (min_str[i] != '\0')
@@ -53,14 +54,12 @@ char	*ft_itoa(int n)
 	int		length;
 	char	*str;
 
-	//n == -2147483648 ? print_int_min() : (void)0;
 	if (n == -2147483648) 
 		return (print_int_min());
 	length = num_length(n);
-	str = (char *)malloc(length + 1);
+	str = (char *)ft_calloc(length + 1, sizeof(char));
 	if (!str)
 		return (NULL);
-	str[length] = '\0';
 	if (n < 0)
 	{
 		str[0] = '-';
