@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: olalsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/14 17:50:22 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/14 17:50:25 by olalsanc         ###   ########.fr       */
+/*   Created: 2024/10/16 15:57:10 by olalsanc          #+#    #+#             */
+/*   Updated: 2024/10/16 15:57:14 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,9 @@ t_list	*ft_lstnew(void	*content)
 /*
 int main()
 {
-    // Ejemplo de contenido para el nuevo nodo
+    printf(Test ft_lstnew);
+
+	// Ejemplo de contenido para el nuevo nodo
     char *content = "Hola, mundo!";
     
     // Crear un nuevo nodo utilizando ft_lstnew
