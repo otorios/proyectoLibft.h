@@ -52,4 +52,5 @@ typedef struct s_list
 } t_list;
 t_list *ft_lstnew(void *content);
 void ft_lstadd_front(t_list **lst, t_list *new);
-#endif  // Termina el bloque de la guarda
+void	ft_lstadd_front(t_list	**lst, t_list	*new)
+#endif
