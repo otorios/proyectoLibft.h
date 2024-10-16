@@ -28,7 +28,7 @@ t_list	*ft_lstnew(void	*content)
 /*
 int main()
 {
-    printf(Test ft_lstnew);
+    printf("Test ft_lstnew");
 
 	// Ejemplo de contenido para el nuevo nodo
     char *content = "Hola, mundo!";
@@ -54,6 +54,20 @@ int main()
     
     // Liberar el nodo (opcional, pero recomendable)
     free(node);
+
+    char *contentNull = NULL;
+    t_list *nodeNull = ft_lstnew(contentNull);
+    if (nodeNull == NULL)
+	{
+        printf("Error al crear el nodo.\n");
+        return 1; // Salir con error
+    }
+    printf("Contenido del nodo: %s\n", (char *)nodeNull->content);
+    if (nodeNull->next == NULL)
+        printf("El puntero 'next' es NULL, como se esperaba.\n");
+    else
+        printf("El puntero 'next' no es NULL, hay un error.\n");
+    free(nodeNull);
     
     return 0; // Salir con éxito
 }

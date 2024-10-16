@@ -25,7 +25,7 @@ SRC = ft_isascii.c ft_toupper.c ft_tolower.c ft_isdigit.c ft_isalpha.c ft_isalnu
 		ft_split.c ft_lstnew.c ft_lstadd_front.c
 OBJ = $(SRC:.c=.o)
 
-BONUS= ft_lstnew_bonus.c ft_lstadd_front_bonus.c
+BONUS= ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c
 
 # Archivo main, con esto no hace flta poner en el comando gcc -Wall -Wextra -Werror -o programa main.c -L. -lft
 # MAIN_SRC = main.c
