@@ -69,6 +69,6 @@ int main()
         printf("El puntero 'next' no es NULL, hay un error.\n");
     free(nodeNull);
     
-    return 0; // Salir con éxito
+    return (0); // Salir con éxito
 }
 */

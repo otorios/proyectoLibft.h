@@ -72,13 +72,14 @@ int main()
 
 	// Liberar la memoria (opcional)
 	t_list *tmp;
-	while (head != NULL) {
+	while (head != NULL) 
+	{
 		tmp = head;          // Guardamos el nodo actual
 		head = head->next;   // Pasamos al siguiente nodo
 		free(tmp->content);  // Liberamos la memoria del contenido
 		free(tmp);          // Liberamos la memoria del nodo
 	}
 
-	return 0; // Fin del programa
+	return (0); // Fin del programa
 }
 */
