@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-//#include <stdio.h>
+#include "libft.h"
 
 int	ft_isalpha(char str)
 {
@@ -20,6 +19,7 @@ int	ft_isalpha(char str)
 	return (0);
 }
 /*
+#include <stdio.h>
 int	main(void)
 {
 	char	str;

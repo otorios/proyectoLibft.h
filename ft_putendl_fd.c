@@ -10,10 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+
 #include "libft.h"
-//#include <fcntl.h>
-//#include <stdio.h>
 
 void	ft_putendl_fd(char *s, int fd)
 {
@@ -22,7 +20,7 @@ void	ft_putendl_fd(char *s, int fd)
 	ft_putstr_fd(s, fd);
 	write(fd, "\n", 1);
 }
-/*
+/*#include <stdio.h>
 int main()
 {
 	int fd = open("output.txt", O_WRONLY | O_CREAT | O_APPEND, 0644);

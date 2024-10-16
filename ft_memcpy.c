@@ -18,9 +18,7 @@
 //unsigned char *des = (unsigned char *)dest;
 //if(! source || ! dest) Comprueba si los punteros son nulos
 
-#include <unistd.h>
-#include <stddef.h>
-//#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memcpy(const void	*source, void	*dest, size_t	num)
 {
@@ -35,7 +33,7 @@ void	*ft_memcpy(const void	*source, void	*dest, size_t	num)
 		*des++ = *sour++;
 	return (dest);
 }
-/*
+/*#include <stdio.h>
 int	main(void)
 {
 	printf("\nTest de ft_memcpy()\n");

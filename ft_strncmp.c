@@ -13,7 +13,7 @@
 /*
 Es como memcmp pero compara cadenas y no bloques
 */
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_strncmp(const char	*str1, const char *str2, size_t byte_size)
 {
@@ -31,7 +31,7 @@ int	ft_strncmp(const char	*str1, const char *str2, size_t byte_size)
 	}
 	return (0);
 }
-/*
+/*#include <stdio.h>
 int main(void)
 {
     printf("\nTest de ft_strncmp()\n");

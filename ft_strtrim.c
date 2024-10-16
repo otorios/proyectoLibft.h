@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-//#include <stdio.h>
+#include "libft.h"
 
 static int	is_in_set(char c, char const	*set)
 {
@@ -48,6 +47,8 @@ char	*ft_strtrim(char const	*s1, char const	*set)
 	return (result);
 }
 /*
+#include <stdlib.h>
+#include <stdio.h>
 int main() 
 {
 	printf("Test ft_strtrim\n");

@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olalsanc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 17:57:59 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/09/10 17:58:03 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/16 18:48:05 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-#include <unistd.h>
+#include "libft.h"
 
 int	ft_isascii(int x)
 {
@@ -19,7 +18,7 @@ int	ft_isascii(int x)
 		return (1);
 	return (0);
 }
-/*
+/*#include <stdio.h>
 int	main(void)
 {
 	int value;

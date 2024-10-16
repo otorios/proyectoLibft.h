@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>//Define size_t
+#include "libft.h"
 //size_t: Es el tipo de datos utilizado para 
 // especificar tamaños de objetos en bytes.
 //Solo puede almacenar números positivos o cero. 
@@ -26,6 +26,7 @@ void	ft_bzero(void *s, size_t n)
 		*ptr++ = 0;
 }
 /*
+#include <stdio.h>
 int	main(void)
 {
 	size_t i;

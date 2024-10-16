@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-//#include <stdio.h>
+
+#include "libft.h"
 
 int	ft_tolower(char x)
 {
@@ -20,6 +20,8 @@ int	ft_tolower(char x)
 	return (x);
 }
 /*
+#include <stdio.h>
+
 int	main(void)
 {
 	char    x;

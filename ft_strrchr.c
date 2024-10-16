@@ -13,8 +13,7 @@
 //devuelve la última coincidencia, sino NULL. Al inicializar a NULL ya tenemos cubierto eso
 //devuelve un puntero al carácter en la cadena (no una posición entera) 
 
-#include <stddef.h>
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strrchr(char *str, char x)
 {
@@ -30,7 +29,7 @@ char	*ft_strrchr(char *str, char x)
 		return str;
 	return (position);
 }
-
+/* #include <stdio.h>
 int	main(void)
 {
 	printf("\nTest de ft_strrchr()\n");
@@ -96,3 +95,4 @@ int	main(void)
 	}
 	return (0);
 }
+ */

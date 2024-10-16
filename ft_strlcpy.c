@@ -15,8 +15,8 @@
 // sino copia hasta size - 1 caracteres
 // Asegura que el destino esté terminado en nulo
 
-#include <stddef.h>
-#include <stdio.h>
+#include "libft.h"
+
 
 size_t	ft_strlcpy(char	*dest, const char *src, size_t size)
 {
@@ -40,7 +40,7 @@ size_t	ft_strlcpy(char	*dest, const char *src, size_t size)
 	
 	return (src_len);
 }
-
+/* #include <stdio.h>
 int	main(void)
 {
     char dest[10];
@@ -56,3 +56,4 @@ int	main(void)
 
 	return (0);
 }
+ */

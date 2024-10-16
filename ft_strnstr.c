@@ -39,8 +39,8 @@ Si needle completo coincide, retornar puntero al inicio de la coincidencia
 		if (x == found_len)
 			return ((char *)(src + i));
 */
-//#include <stdio.h>
-#include <stddef.h>
+//
+#include "libft.h"
 char	*ft_strnstr(const char *src, const char *found, size_t len)
 {
 	size_t	found_len;
@@ -64,7 +64,7 @@ char	*ft_strnstr(const char *src, const char *found, size_t len)
 	}
 	return (NULL);
 }
-/*
+/*#include <stdio.h>
 int	main(void)
 {
 	 printf("Test de ft_strnstr\n");

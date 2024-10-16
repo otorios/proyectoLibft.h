@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stddef.h> // Para size_t
+
+#include "libft.h"
 
 void *ft_memmove(void *dest, const void *src, size_t num) 
 {
@@ -35,7 +35,7 @@ void *ft_memmove(void *dest, const void *src, size_t num)
 
     return dest; // Retornamos el puntero original a dest
 }
-
+/* #include <stdio.h>
 int main(void) 
 {
     printf("Este es el test de la funcion ft_memmove:\n");
@@ -54,4 +54,4 @@ int main(void)
 
     return 0;
 }
-
+ */

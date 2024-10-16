@@ -10,10 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-//#include <stdio.h>
+#include "libft.h"
 
-size_t	ft_strlen(char	*str)
+size_t	ft_strlen(const char	*str)
 {
 	size_t	size;
 
@@ -22,7 +21,7 @@ size_t	ft_strlen(char	*str)
 		size++;
 	return (size);
 }
-/*
+/*#include <stdio.h>
 int	main(void)
 {
 	printf("\nTest de ft_strlen()\n");

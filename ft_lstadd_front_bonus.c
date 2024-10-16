@@ -22,9 +22,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>//malloc
+
 #include "libft.h" 
-//#include <stdio.h>
+
 
 // Función para añadir un nodo al principio de la lista
 void	ft_lstadd_front(t_list	**lst, t_list	*new)
@@ -34,7 +34,7 @@ void	ft_lstadd_front(t_list	**lst, t_list	*new)
 	new->next = *lst;
 	*lst = new;
 }
-/*
+/*#include <stdio.h>
 // Función para imprimir la lista
 void print_list(t_list *lst)
 {

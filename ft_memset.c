@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-//#include <stdio.h>
+#include "libft.h"
 
 void	ft_memset(char *x, int value, size_t varsize)
 {
@@ -23,7 +22,7 @@ void	ft_memset(char *x, int value, size_t varsize)
 	while (varsize--)
 		*varbuffer++ = value_to_fill;
 }
-/*
+/*#include <stdio.h>
 int	main(void)
 {
 	size_t i;

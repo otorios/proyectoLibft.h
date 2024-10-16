@@ -11,19 +11,23 @@
 /* ************************************************************************** */
 
 #ifndef LIBFT_H   // Si LIBFT_H no está definido...
-#define LIBFT_H   // Defínelo para evitar inclusiones múltiples
+# define LIBFT_H   // Defínelo para evitar inclusiones múltiples
+
+#include <stddef.h>
+#include <stdlib.h>
+#include <unistd.h>
 
 // Aquí van las declaraciones de las funciones
 
 int ft_isascii(int x);
-int ft_toupper(int x);
-int ft_tolower(int x);
+int	ft_toupper(char x);
+int	ft_tolower(char x);
 int	ft_isdigit(char number);
 int	ft_isalpha(char str);
 int ft_isalnum(char x);
 int	ft_isprint(int x);
-int ft_strlen(const char *str);
-void ft_bzero(void *s, int n);
+size_t	ft_strlen(const char	*str);
+void	ft_bzero(void *s, size_t n);
 //void ft_memset(char *x, int value, size_t varsize, size_t buffer_size);
 void    *ft_memcpy(const void	*source, void	*dest, size_t	num);
 //int ft_strchr(char *str, char x);
@@ -44,13 +48,16 @@ void	ft_striteri(char	*s, void (*f)(unsigned int, char*));
 char	*ft_strmapi(char const	*s, char (*f)(unsigned int, char));
 char	*ft_strjoin(char const *s1, char const *s2);
 char	**ft_split(char const	*s, char c);
+
 //-------------------------------------
 typedef struct s_list
 {
     void *content;
     struct s_list *next;
 } t_list;
+
 t_list *ft_lstnew(void *content);
 void	ft_lstadd_front(t_list	**lst, t_list	*new);
 int	ft_lstsize(t_list	*lst);
+
 #endif

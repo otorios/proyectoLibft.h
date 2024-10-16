@@ -3,16 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olalsanc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 11:21:18 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/06 11:21:20 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/16 18:31:31 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+
 #include "libft.h"
-//#include <stdio.h>
 
 char	*print_int_min(void)
 {
@@ -77,7 +76,7 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-/*
+/*//#include <stdio.h>
 int main() 
 {
 	printf("\nTest ft_itoa()\n");

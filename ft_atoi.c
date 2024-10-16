@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olalsanc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 15:23:53 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/09/24 15:23:57 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/16 18:49:16 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ Por ejemplo return 1234 * (-1); devolveria -1234
 en la funcion is_space retorna true o false. el resultado de la comprobacion
 */
 
-#include <unistd.h>
-#include <stdio.h>
+#include "libft.h"
+
 
 int	is_space(char c)
 {
@@ -66,6 +66,8 @@ int	ft_atoi(char *str)
 	}
 	return (num * sign);
 }
+/* #include <unistd.h>
+#include <stdio.h>
 
 int	main(void)
 {
@@ -95,4 +97,4 @@ int	main(void)
 	printf("Input: '%s' => Result: %d\n", str10, ft_atoi(str10)); // Debería imprimir: -2147483648
 
 	return (0);
-}
+} */

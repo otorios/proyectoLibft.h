@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>  // Para malloc y NULL
 #include "libft.h"
-//#include <stdio.h>
 
 void	*ft_calloc(size_t	num_elements, size_t	element_size)
 {
@@ -27,6 +25,8 @@ void	*ft_calloc(size_t	num_elements, size_t	element_size)
 	return (ptr);
 }
 /*
+#include <stdio.h>
+
 int main(void) 
 {
 	printf("Test ft_calloc\n");

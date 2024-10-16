@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>// Para malloc y NULL
+
 #include "libft.h"
-//#include <stdio.h>
+
 
 char	*ft_strdup(const char	*s)
 {
@@ -21,14 +21,14 @@ char	*ft_strdup(const char	*s)
 
 	if (s == NULL)
 		return (NULL);
-	len = ft_strlen(s);
+	len = ft_strlen((char *)s);
 	dup = (char *)malloc(len + 1);
 	if (dup == NULL)
 		return (NULL);
 	ft_memcpy(s, dup, len + 1);
 	return (dup);
 }
-/*
+/*#include <stdio.h>
 int main()
 {
 	// Test ft_strdup

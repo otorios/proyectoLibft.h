@@ -21,8 +21,6 @@
 //para realizar la concatenación, ya que el buffer está completamente ocupado por dst.
 //si fuera dst_len <= size significa que todavía queda espacio
 
-#include <stdio.h>
-#include <stddef.h>
 #include "libft.h"
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
@@ -56,6 +54,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	return (dest_len + src_len);
 }
 
+/* 
 // Función de prueba
 
 void test_ft_strlcat(char *buffer, const char *str, size_t size, const char *expected)
@@ -67,8 +66,7 @@ void test_ft_strlcat(char *buffer, const char *str, size_t size, const char *exp
 	printf("Resultado esperado: %s\n", expected);
 	printf("===\n");
 }
-
-
+#include <stdio.h>
 int main(void)
 {
 	// Test 1: Concatenar cadenas que caben sin problemas
@@ -104,3 +102,4 @@ int main(void)
     return 0;
 }
 
+ */

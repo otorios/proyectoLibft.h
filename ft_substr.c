@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-//#include <stdio.h>
+#include "libft.h"
 
 char	*chek_start(size_t	s_size, unsigned int start)
 {
@@ -55,7 +54,7 @@ char	*ft_substr(char const	*s, unsigned int start, size_t	len)
 	new_string[len] = '\0';
 	return (new_string);
 }
-/*
+/*#include <stdio.h>
 int main() 
 {
     printf("Test ft_substr:\n");

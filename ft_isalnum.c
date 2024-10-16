@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
 #include "libft.h"
 
 int	ft_isalnum(char x)
@@ -20,6 +19,8 @@ int	ft_isalnum(char x)
 	return (0);
 }
 /*
+#include <stdio.h>
+
 int	main(void)
 {
 	char    x;

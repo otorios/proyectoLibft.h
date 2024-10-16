@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h> 
+
 #include "libft.h"
-//#include <stdio.h>
+
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -24,8 +24,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	if (!s1 || !s2)
 		return (NULL);
-	len1 = ft_strlen(s1);
-	len2 = ft_strlen(s2);
+	len1 = ft_strlen((char *)s1);
+	len2 = ft_strlen((char *)s2);
 	final_string = (char *) malloc (len1 + len2 + 1);
 	if (!final_string)
 		return (NULL);
@@ -38,7 +38,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	final_string[a + b] = '\0';
 	return (final_string);
 }
-/*
+/*#include <stdio.h>
 int	main(void)
 {
 	printf("Test fc_strjoin\n");

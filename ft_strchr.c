@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strchr(char *str, int c)
 {
@@ -29,7 +29,7 @@ char	*ft_strchr(char *str, int c)
 	}
 	return (NULL);
 }
-/*
+/*#include <stdio.h>
 char *ft_strchr(const char *str, char x)
 {
 	while (*str != '\0') 

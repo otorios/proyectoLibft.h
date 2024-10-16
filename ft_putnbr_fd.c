@@ -10,11 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <fcntl.h> // Para open
-#include <stdlib.h> // Para EXIT_SUCCESS
-#include <unistd.h>
 #include "libft.h"
-//#include <stdio.h>
 
 void	ft_putnbr_fd(int n, int fd)
 {
@@ -40,7 +36,7 @@ void	ft_putnbr_fd(int n, int fd)
 	while (i > 0)
 		write(fd, &buffer[--i], 1);
 }
-/*
+/*#include <stdio.h>
 int main() {
     int fd = open("output.txt", O_WRONLY | O_CREAT | O_APPEND, 0644); 
 	// Cambiado a O_APPEND

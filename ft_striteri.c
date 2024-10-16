@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-//#include <stdio.h>
+#include "libft.h"
 /*
 void f(unsigned int i, char *str) 
 {
@@ -32,7 +31,7 @@ void	ft_striteri(char	*s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
-/*
+/*#include <stdio.h>
 int main(void)
 {
     char str1[] = "Hola, Mundo! 123";

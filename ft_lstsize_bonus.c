@@ -10,9 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+
 #include "libft.h"
-//#include <stdio.h>
 
 int	ft_lstsize(t_list	*lst)
 {
@@ -27,7 +26,8 @@ int	ft_lstsize(t_list	*lst)
 	return (i);
 }
 
-/* int main(void)
+/* #include <stdio.h>
+int main(void)
 {
 	printf("Test ft_lstsize\n");
 

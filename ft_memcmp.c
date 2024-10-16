@@ -16,8 +16,8 @@ Un valor negativo si el primer bloque es "menor" que el segundo
 (según el primer byte donde difieren).
 Un valor positivo si el primer bloque es "mayor" que el segundo.
 */
+#include "libft.h"
 
-#include <stdio.h>
 
 int	ft_memcmp(const void	*str1, const void	*str2, size_t	byte_size)
 {
@@ -35,7 +35,7 @@ int	ft_memcmp(const void	*str1, const void	*str2, size_t	byte_size)
 	}
 	return (0);
 }
-/*
+/*#include <stdio.h>
 int	main(void)
 {
 	printf("\nTest de t_strchr()\n");

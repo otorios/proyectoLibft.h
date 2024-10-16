@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h> // para malloc
-//#include <stdio.h>
+#include "libft.h"
+//
 /*
 char f(unsigned int i, char str) 
 {
@@ -46,7 +46,7 @@ char	*ft_strmapi(char const	*s, char (*f)(unsigned int, char))
 	new_str[i] = '\0';
 	return (new_str);
 }
-/*
+/*#include <stdio.h>
 int main(void)
 {
     char str1[] = "Hola, Mundo! 123";

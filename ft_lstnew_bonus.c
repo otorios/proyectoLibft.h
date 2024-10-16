@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>//malloc
+
 #include "libft.h"
-//#include <stdio.h>
+
 
 t_list	*ft_lstnew(void	*content)
 {
@@ -25,7 +25,7 @@ t_list	*ft_lstnew(void	*content)
 	new_node->next = NULL;
 	return (new_node);
 }
-/*
+/*#include <stdio.h>
 int main()
 {
     printf("Test ft_lstnew");
