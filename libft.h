@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olalsanc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 16:25:37 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/09/10 16:33:57 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/17 18:01:15 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,21 @@
 #include <unistd.h>
 
 // Aquí van las declaraciones de las funciones
+//----------------Bonus part---------------------
+
+typedef struct s_list
+{
+    void *content;
+    struct s_list *next;
+} t_list;
+
+t_list *ft_lstnew(void *content);
+void	ft_lstadd_front(t_list	**lst, t_list	*new);
+int	ft_lstsize(t_list	*lst);
+t_list	*ft_lstlast(t_list *lst);
+void	ft_lstadd_back(t_list **lst, t_list *new);
+
+//----------------1º part---------------------
 
 int ft_isascii(int x);
 int	ft_toupper(char x);
@@ -36,28 +51,19 @@ void    *ft_memcpy(const void	*source, void	*dest, size_t	num);
 int	ft_memcmp(const void	*str1, const void	*str2, size_t	byte_size);
 void	*ft_calloc(size_t	num_elements, size_t	element_size);
 char	*ft_strdup(const char	*s);
-//-------------------------------------
+
+//----------------2º part---------------------
+
 void	ft_putchar_fd(char c, int fd);
 void ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
-//itoa
+char	*ft_itoa(int n);
 char	*ft_substr(char const	*s, unsigned int start, size_t	len);
 char	*ft_strtrim(char const	*s1, char const	*set);
 void	ft_striteri(char	*s, void (*f)(unsigned int, char*));
 char	*ft_strmapi(char const	*s, char (*f)(unsigned int, char));
 char	*ft_strjoin(char const *s1, char const *s2);
 char	**ft_split(char const	*s, char c);
-
-//-------------------------------------
-typedef struct s_list
-{
-    void *content;
-    struct s_list *next;
-} t_list;
-
-t_list *ft_lstnew(void *content);
-void	ft_lstadd_front(t_list	**lst, t_list	*new);
-int	ft_lstsize(t_list	*lst);
 
 #endif
