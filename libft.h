@@ -6,7 +6,7 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 16:25:37 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/17 19:27:35 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/18 17:11:43 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ t_list	*ft_lstlast(t_list *lst);
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
+void	ft_lstiter(t_list *lst, void (*f)(void *));
 
 //----------------1º part---------------------
 
@@ -50,6 +51,7 @@ void    *ft_memcpy(const void	*source, void	*dest, size_t	num);
 //int ft_strchr(char *str, char x);
 //char *ft_strrchr(char *str, char x);
 //char *ft_memchr (const char    *str, int  byte_x, size_t   byte_lenght);
+size_t	ft_strlcpy(char	*dest, const char *src, size_t size);
 int	    ft_memcmp(const void	*str1, const void	*str2, size_t	byte_size);
 void	*ft_calloc(size_t	num_elements, size_t	element_size);
 char	*ft_strdup(const char	*s);
