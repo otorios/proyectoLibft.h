@@ -6,7 +6,7 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:01:11 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/18 17:07:33 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/18 17:14:54 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 
 int main() 
 {
-    // Creamos contenido dinámico para los nodos
+    // Creamos contenido dinámico para los nodos y asi poder cambair el contenido
     char *str1 = malloc(7); // Asignamos memoria para "Nodo 1"
     char *str2 = malloc(7); // Asignamos memoria para "Nodo 2"
     char *str3 = malloc(7); // Asignamos memoria para "Nodo 3"
