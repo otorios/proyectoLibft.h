@@ -6,11 +6,13 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:01:33 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/18 18:01:25 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/18 18:09:56 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//gcc -Wall -Wextra -Werror ft_lstmap_bonus.c ft_lstnew_bonus.c ft_lstclear_bonus.c ft_lstadd_back_bonus.c ft_strlcpy.c ft_strlen
+
 
 /* void	*f(void	*content)
 {

@@ -6,31 +6,28 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 17:24:02 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/16 18:58:27 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/18 18:46:34 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// busca la primera aparición de un byte específico en un bloque de memoria.
-// Retorna un puntero a la primera aparición del byte buscado en el bloque de memoria. NULL si el byte no se encuentra en el bloque de memoria.
-
 #include "libft.h"
 
-char	*ft_memchr(const char *str, int byte_x, size_t byte_lenght)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	const unsigned char	*p = (const unsigned char *)str;
-		// Convertir a unsigned char para acceso byte a byte y const porque solo necesitamos leer
-	unsigned char byte = (unsigned char)byte_x;         
-		// Convertir byte_x a unsigned char para que coincida con el tipo de los bytes en memoria
-	while (byte_lenght--)
+	const unsigned char	*p;
+	unsigned char		byte;
+
+	p = (const unsigned char *)s;
+	byte = (unsigned char)c;
+	while (n--)
 	{
 		if (*p == byte)
 			return ((char *)p);
-				// Retornar el puntero al byte encontrado REVISAR porque retoerna como char si es constante
-		p++;                  // Avanzar al siguiente byte
+		p++;
 	}
 	return (NULL);
 }
-/*
+/* 
 #include <stdio.h>
 
 int	main(void)
@@ -92,6 +89,4 @@ int	main(void)
 		printf("Resultado: No encontrado\n");
 
 	return (0);
-	}
-
- */
+	} */

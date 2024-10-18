@@ -6,7 +6,7 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 16:25:37 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/18 17:11:43 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/18 18:50:58 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,10 +47,12 @@ int	    ft_isprint(int x);
 size_t	ft_strlen(const char	*str);
 void	ft_bzero(void *s, size_t n);
 //void ft_memset(char *x, int value, size_t varsize, size_t buffer_size);
-void    *ft_memcpy(const void	*source, void	*dest, size_t	num);
-//int ft_strchr(char *str, char x);
-//char *ft_strrchr(char *str, char x);
-//char *ft_memchr (const char    *str, int  byte_x, size_t   byte_lenght);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
+char    *strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
+void	*ft_memchr(const void *s, int c, size_t n);
+int	ft_memcmp(const void	*s1, const void	*s2, size_t	n);
+
 size_t	ft_strlcpy(char	*dest, const char *src, size_t size);
 int	    ft_memcmp(const void	*str1, const void	*str2, size_t	byte_size);
 void	*ft_calloc(size_t	num_elements, size_t	element_size);

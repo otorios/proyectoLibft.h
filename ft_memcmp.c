@@ -3,30 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olalsanc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 14:53:10 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/09/19 14:53:34 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/18 18:52:53 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-0 si los bloques de memoria son iguales en los primeros n bytes.
-Un valor negativo si el primer bloque es "menor" que el segundo 
-(según el primer byte donde difieren).
-Un valor positivo si el primer bloque es "mayor" que el segundo.
-*/
 #include "libft.h"
 
-
-int	ft_memcmp(const void	*str1, const void	*str2, size_t	byte_size)
+int	ft_memcmp(const void	*s1, const void	*s2, size_t	n)
 {
 	const unsigned char	*unstr1;
 	const unsigned char	*unstr2;
 
-	unstr1 = (const unsigned char *) str1;
-	unstr2 = (const unsigned char *) str2;
-	while (byte_size--)
+	unstr1 = (const unsigned char *) s1;
+	unstr2 = (const unsigned char *) s2;
+	while (n--)
 	{
 		if (*unstr1 != *unstr2)
 			return (*unstr1 - *unstr2);
@@ -35,7 +28,7 @@ int	ft_memcmp(const void	*str1, const void	*str2, size_t	byte_size)
 	}
 	return (0);
 }
-/*#include <stdio.h>
+/* #include <stdio.h>
 int	main(void)
 {
 	printf("\nTest de t_strchr()\n");
@@ -74,4 +67,4 @@ int	main(void)
 
 	return (0);
 }
-*/
+ */

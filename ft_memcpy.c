@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olalsanc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 15:53:23 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/09/17 15:53:28 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/18 18:17:21 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,20 +20,20 @@
 
 #include "libft.h"
 
-void	*ft_memcpy(const void	*source, void	*dest, size_t	num)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	const unsigned char	*sour;
 	unsigned char		*des;
 
-	if (!source || !dest)
+	if (!src || !dest)
 		return (NULL);
-	sour = (const unsigned char *) source;
+	sour = (const unsigned char *) src;
 	des = (unsigned char *) dest;
-	while (num--)
+	while (n--)
 		*des++ = *sour++;
 	return (dest);
 }
-/*#include <stdio.h>
+/* #include <stdio.h>
 int	main(void)
 {
 	printf("\nTest de ft_memcpy()\n");
@@ -55,7 +55,7 @@ int	main(void)
 	num = 5;
 	
 	printf("Valor de dest antes de concatenar 5 posiciones: '%s'\n", dest);
-	ft_memcpy(source, dest,	num);	
+	ft_memcpy(dest, source,	num);	
 	printf("Valor de dest despues de concatenar 5 posiciones: '%s'\n", dest);
 	
 	char	source2[6] = "Mundo";
@@ -63,7 +63,7 @@ int	main(void)
 	num = 2;
 
 	printf("Valor de dest antes de concatenar 2 posiciones: '%s'\n", dest2);
-	ft_memcpy(source2, dest2, num);	
+	ft_memcpy(dest2, source2, num);	
 	printf("Valor de dest despues de concatenar 2 posiciones: '%s'\n", dest2);
 
 	int source_ints[5] = {1, 2, 3, 4, 5}; // Array de enteros de origen
@@ -95,4 +95,4 @@ int	main(void)
     	printf("\n");
     	return (0);
 }
-*/
+ */

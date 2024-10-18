@@ -3,33 +3,33 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olalsanc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 17:44:39 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/09/17 17:44:43 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/18 18:27:47 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(char *str, int c)
+char	*strchr(const char *s, int c)
 {
 	char	char_c;
 
 	char_c = (char) c;
-	while (*str != '\0')
+	while (*s != '\0')
 	{
-		if (char_c == *str)
-			return ((char *)str);
-		str++;
+		if (char_c == *s)
+			return ((char *)s);
+		s++;
 	}
 	if (c == '\0')
 	{
-		return ((char *)str);
+		return ((char *)s);
 	}
 	return (NULL);
 }
-/*#include <stdio.h>
+/* #include <stdio.h>
 char *ft_strchr(const char *str, char x)
 {
 	while (*str != '\0') 
@@ -43,8 +43,7 @@ char *ft_strchr(const char *str, char x)
 	return NULL; // No se encontró el carácter. 
     //Ponemos NULL porque al trabajar con punteros nos lo permite
 }
-*/
-/*
+
 int	main(void)
 {
 	printf("\nTest de ft_strchr()\n");
@@ -112,5 +111,4 @@ int	main(void)
     }
 
 	return (0);
-}
-*/
+} */
