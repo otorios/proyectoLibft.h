@@ -3,68 +3,40 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olalsanc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 17:13:53 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/09/24 17:13:59 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/19 11:10:51 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Validar entrada: Comprobar si needle es una cadena vacía. 
-Si lo es, simplemente devolver haystack.
-
-Iterar sobre haystack: Recorrer haystack hasta el límite de len 
-o hasta que se alcance el final de la cadena.
-
-Buscar coincidencias: Para cada carácter en haystack, verificar 
-si el resto de la cadena contiene needle.
-
-Devolver resultado: Si se encuentra needle, devolver el puntero al 
-inicio de la coincidencia. Si no se encuentra ninguna coincidencia, 
-devolver NULL.
-
-src: La cadena principal donde se busca la subcadena.
-str: La subcadena que se desea normi	encontrar.
-len: El número máximo de caracteres de haystack a examinar.
-
-Devuelve un puntero a la primera aparición de needle en haystack 
-dentro de los primeros len caracteres.
-Si needle es una cadena vacía, devuelve haystack.
-Si no se encuentra needle, devuelve NULL.
-
-recorremmos solo hasta donde puede ser que entre la palabra que buscamos, 
-el resto de posiciones nada. Por eso la resta
-	while (src[i] != '\0' && i <= len - found_len )
-Si needle completo coincide, retornar puntero al inicio de la coincidencia
-		if (x == found_len)
-			return ((char *)(src + i));
-*/
-//
 #include "libft.h"
-char	*ft_strnstr(const char *src, const char *found, size_t len)
+
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t	found_len;
+	size_t	little_len;
 	size_t	i;
 	size_t	x;
 
-	if (!*found)
-		return ((char *)src);
-	found_len = 0;
-	while (found[found_len] != '\0')
-		found_len++;
+	if (!*little)
+		return ((char *)big);
+	little_len = 0;
+	while (little[little_len] != '\0')
+		little_len++;
 	i = 0;
-	while (src[i] != '\0' && i <= len - found_len)
+	while (big[i] != '\0' && i <= len - little_len)
 	{
 		x = 0;
-		while (x < found_len && src[i + x] == found[x])
+		while (x < little_len && big[i + x] == little[x])
 			x++;
-		if (x == found_len)
-			return ((char *)(src + i));
+		if (x == little_len)
+			return ((char *)(big + i));
 		i++;
 	}
 	return (NULL);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 int	main(void)
 {
 	 printf("Test de ft_strnstr\n");
@@ -164,5 +136,4 @@ int	main(void)
 	printf("Esperado: '' (haystack y needle vacío)\n\n");
     
     return (0);
-}
-*/
+} */

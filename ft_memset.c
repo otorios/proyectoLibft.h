@@ -3,26 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olalsanc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 18:41:49 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/09/10 18:41:51 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/19 11:22:31 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_memset(char *x, int value, size_t varsize)
+void	*ft_memset(void	*s, int c, size_t	n)
 {
 	unsigned char	*varbuffer;
-	unsigned char	value_to_fill;
+	unsigned char	c_to_fill;
 
-	varbuffer = (unsigned char *) x;
-	value_to_fill = (unsigned char) value;
-	while (varsize--)
-		*varbuffer++ = value_to_fill;
+	varbuffer = (unsigned char *) s;
+	c_to_fill = (unsigned char) c;
+	while (n--)
+		*varbuffer++ = c_to_fill;
+	return (s);
 }
-/*#include <stdio.h>
+/* 
+#include <stdio.h>
 int	main(void)
 {
 	size_t i;
@@ -62,5 +64,4 @@ int	main(void)
 	printf("\n");
 
 	return (0);
-}
-*/
+} */

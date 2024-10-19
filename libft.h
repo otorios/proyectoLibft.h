@@ -6,7 +6,7 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 16:25:37 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/18 18:50:58 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/19 11:29:23 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,15 +46,18 @@ int     ft_isalnum(char x);
 int	    ft_isprint(int x);
 size_t	ft_strlen(const char	*str);
 void	ft_bzero(void *s, size_t n);
-//void ft_memset(char *x, int value, size_t varsize, size_t buffer_size);
+void	*ft_memset(void	*s, int c, size_t	n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 char    *strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 void	*ft_memchr(const void *s, int c, size_t n);
-int	ft_memcmp(const void	*s1, const void	*s2, size_t	n);
-
-size_t	ft_strlcpy(char	*dest, const char *src, size_t size);
 int	    ft_memcmp(const void	*str1, const void	*str2, size_t	byte_size);
+int	    ft_strncmp(const char	*s1, const char *s2, size_t n);
+int	    ft_atoi(const char *nptr);
+void	*ft_memmove(void	*dest, const void	*src, size_t	n);
+size_t	ft_strlcpy(char	*dst, const char *src, size_t size);
+size_t	ft_strlcat(char *dest, const char *src, size_t size);
+char	*ft_strnstr(const char *big, const char *little, size_t len);
 void	*ft_calloc(size_t	num_elements, size_t	element_size);
 char	*ft_strdup(const char	*s);
 

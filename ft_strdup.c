@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olalsanc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 17:15:03 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/09/24 17:15:06 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/19 11:29:00 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
-
 
 char	*ft_strdup(const char	*s)
 {
@@ -25,10 +23,11 @@ char	*ft_strdup(const char	*s)
 	dup = (char *)malloc(len + 1);
 	if (dup == NULL)
 		return (NULL);
-	ft_memcpy(s, dup, len + 1);
+	ft_memcpy(dup, s, len + 1);
 	return (dup);
 }
-/*#include <stdio.h>
+/* #include <stdio.h>
+//gcc -Wall -Wextra -Werror ft_strdup.c ft_memcpy.c ft_strlen.c 
 int main()
 {
 	// Test ft_strdup
@@ -89,4 +88,4 @@ int main()
 
 	return (0);
 }
-*/
+ */

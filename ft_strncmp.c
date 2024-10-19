@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olalsanc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 15:31:48 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/09/19 15:31:50 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/19 10:10:56 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@ Es como memcmp pero compara cadenas y no bloques
 */
 #include "libft.h"
 
-int	ft_strncmp(const char	*str1, const char *str2, size_t byte_size)
+int	ft_strncmp(const char	*s1, const char *s2, size_t n)
 {
 	unsigned char	*unstr1;
 	unsigned char	*unstr2;
 
-	unstr1 = (unsigned char *) str1;
-	unstr2 = (unsigned char *) str2;
-	while (byte_size--)
+	unstr1 = (unsigned char *) s1;
+	unstr2 = (unsigned char *) s2;
+	while (n--)
 	{
 		if (*unstr1 != *unstr2 || *unstr1 == '\0' || *unstr2 == '\0')
 			return (*unstr1 - *unstr2);
