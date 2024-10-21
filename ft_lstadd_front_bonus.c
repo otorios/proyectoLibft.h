@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olalsanc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 15:58:34 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/16 15:58:37 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/21 19:08:19 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h" 
 
-
-// Función para añadir un nodo al principio de la lista
 void	ft_lstadd_front(t_list	**lst, t_list	*new)
 {
 	if (lst == NULL || new == NULL)

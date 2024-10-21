@@ -6,7 +6,7 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 16:25:37 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/19 13:12:29 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/21 18:47:45 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,11 +39,11 @@ t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 //----------------1º part---------------------
 
 int					ft_isascii(int x);
-int					ft_toupper(char x);
-int					ft_tolower(char x);
-int					ft_isdigit(char number);
-int					ft_isalpha(char str);
-int					ft_isalnum(char x);
+int					ft_toupper(int x);
+int					ft_tolower(int x);
+int					ft_isdigit(int number);
+int					ft_isalpha(int str);
+int					ft_isalnum(int x);
 int					ft_isprint(int x);
 size_t				ft_strlen(const char *str);
 void				ft_bzero(void *s, size_t n);

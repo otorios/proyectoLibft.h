@@ -6,10 +6,9 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 11:21:18 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/16 18:31:31 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/21 19:10:08 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "libft.h"
 
@@ -53,7 +52,7 @@ char	*ft_itoa(int n)
 	int		length;
 	char	*str;
 
-	if (n == -2147483648) 
+	if (n == -2147483648)
 		return (print_int_min());
 	length = num_length(n);
 	str = (char *)ft_calloc(length + 1, sizeof(char));

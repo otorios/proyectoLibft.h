@@ -3,19 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olalsanc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 16:30:57 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/09/16 16:31:00 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/21 18:28:46 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//size_t: Es el tipo de datos utilizado para 
-// especificar tamaños de objetos en bytes.
-//Solo puede almacenar números positivos o cero. 
-//unsigned char: Se usa para manipular datos a nivel de byte.
-//#include <stdio.h>
 
 void	ft_bzero(void *s, size_t n)
 {

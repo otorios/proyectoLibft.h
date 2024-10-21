@@ -6,13 +6,10 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 15:31:48 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/19 10:10:56 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/21 18:55:58 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-Es como memcmp pero compara cadenas y no bloques
-*/
 #include "libft.h"
 
 int	ft_strncmp(const char	*s1, const char *s2, size_t n)

@@ -6,20 +6,11 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:01:11 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/18 17:14:54 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/21 19:05:54 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h" 
-
-void	f(void	*content)
-{
-	char	*str;
-
-	str = (char *)content;
-	if (str)
-		str[0] = '-';
-}
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
@@ -37,6 +28,15 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 /* 
 #include <stdio.h>
 #include <string.h>
+
+void	f(void	*content)
+{
+	char	*str;
+
+	str = (char *)content;
+	if (str)
+		str[0] = '-';
+}
 
 int main() 
 {
@@ -73,4 +73,5 @@ int main()
     free(str3);
 
     return (0); // Fin del programa
-} */
+} 
+ */

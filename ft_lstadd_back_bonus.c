@@ -6,13 +6,12 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 15:59:47 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/17 17:59:29 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/21 19:08:29 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Función que añade el nodo 'new' al final de la lista 'lst'
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*temp;

@@ -6,19 +6,20 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 14:55:07 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/16 18:48:52 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/21 18:45:40 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(char number)
+int	ft_isdigit(int number)
 {
 	if (number >= '0' && number <= '9')
 		return (1);
 	return (0);
 }
-/*//#include <stdio.h>
+/* 
+#include <stdio.h>
 int	main(void)
 {
 	char	number;
@@ -52,4 +53,4 @@ int	main(void)
 	
 	return (0);
 }
-*/
+ */

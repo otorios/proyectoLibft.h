@@ -3,26 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olalsanc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 11:22:58 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/06 11:23:00 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/21 18:56:45 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//
-/*
-char f(unsigned int i, char str) 
-{
-	i = 32;
-    if (str >= 'a' && str <= 'z')
-	{
-		return (str -= i);
-	}
-	return (str);
-}
-*/
+
 char	*ft_strmapi(char const	*s, char (*f)(unsigned int, char))
 {
 	int		len;

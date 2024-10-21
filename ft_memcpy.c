@@ -6,17 +6,9 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 15:53:23 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/18 18:17:21 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/21 18:52:37 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//Convierte a solo lectura sin modificar el contenido
-//const unsigned char *sour = (const unsigned char *)source;
-//es un tipo de datos de tamaño 1 byte,
-//lo que te permite trabajar a nivel de byte, lo cual es necesario 
-//para copiar bloques de memoria.
-//unsigned char *des = (unsigned char *)dest;
-//if(! source || ! dest) Comprueba si los punteros son nulos
 
 #include "libft.h"
 

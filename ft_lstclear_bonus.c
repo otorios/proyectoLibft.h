@@ -6,19 +6,12 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:00:27 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/17 19:27:21 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/21 19:07:39 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Función que libera el contenido del nodo (en este caso, un entero)
-void	del(void *content)
-{
-	free (content);
-}
-
-// Función que libera los nodos de una lista enlazada
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*temp;
@@ -36,6 +29,12 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 }
 /* 
 #include <stdio.h>
+
+void	del(void *content)
+{
+	free (content);
+}
+
 int main()
 {
     t_list *head = ft_lstnew(malloc(sizeof(int))); // Crear el primer nodo

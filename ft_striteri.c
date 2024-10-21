@@ -3,21 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olalsanc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 11:22:41 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/06 11:22:43 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/21 18:57:31 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
-void f(unsigned int i, char *str) 
-{
-    if (*str >= 'A' && *str <= 'Z')
-        printf("Caracter en posicion %u ('%c') pasa a minuscula.\n", i, *str += 32);
-}
-*/
+
 void	ft_striteri(char	*s, void (*f)(unsigned int, char*))
 {
 	int	i;

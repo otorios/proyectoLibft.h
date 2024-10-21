@@ -6,16 +6,11 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:00:05 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/17 18:27:25 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/21 19:06:24 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"  // Asumiendo que aquí está definida t_list
-
-void	del(void	*content)
-{
-	free(content);
-}
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
@@ -25,7 +20,13 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 		free(lst);
 	}
 }
-/* int main()
+/* 
+void	del(void	*content)
+{
+	free(content);
+}
+
+int main()
 {
     // Crear un nuevo nodo con contenido dinámico
     char *data = malloc(20);

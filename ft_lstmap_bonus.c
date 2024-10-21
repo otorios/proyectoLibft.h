@@ -6,11 +6,33 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:01:33 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/19 13:03:10 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/21 19:03:15 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+{
+	t_list	*next_node;
+	void	*new_content;
+	t_list	*new_node;
+
+	if (!lst)
+		return (NULL);
+	next_node = ft_lstmap(lst->next, f, del);
+	new_content = f(lst->content);
+	new_node = ft_lstnew(new_content);
+	if (!new_node)
+	{
+		del(new_content);
+		return (NULL);
+	}
+	new_node->next = next_node;
+	return (new_node);
+}
+/* 
+#include <stdio.h>
 
 void	*add_dash(void	*content)
 {
@@ -32,26 +54,6 @@ void	del_content(void *content)
 	free(content);
 }
 
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
-{
-	t_list	*next_node;
-	void	*new_content;
-	t_list	*new_node;
-
-	if (!lst)
-		return (NULL);
-	next_node = ft_lstmap(lst->next, f, del);
-	new_content = f(lst->content);
-	new_node = ft_lstnew(new_content);
-	if (!new_node)
-	{
-		del(new_content);
-		return (NULL);
-	}
-	new_node->next = next_node;
-	return (new_node);
-}
-/* #include <stdio.h>
 //gcc -Wall -Wextra -Werror ft_lstmap_bonus.c ft_strlen.c ft_lstnew_bonus.c 
 //ft_lstclear_bonus.c ft_strdup.c ft_memcpy.c ft_strlcpy.c 
 int main()

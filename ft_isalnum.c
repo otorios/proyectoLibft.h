@@ -3,27 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olalsanc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 17:23:27 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/09/10 17:23:32 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/21 18:46:53 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(char x)
+int	ft_isalnum(int x)
 {
 	if (ft_isalpha(x) || ft_isdigit(x))
 		return (1);
 	return (0);
 }
-/*
+/* 
 #include <stdio.h>
 
 int	main(void)
 {
-	char    x;
+	int    x;
 	
 	printf("\nTest de ft_isalnum()\n");
 	
@@ -53,5 +53,4 @@ int	main(void)
 	printf("Test 5 - str = ' ': %d\n", ft_isalnum(x)); 
 	
 	return (0);
-}
-*/
+} */
