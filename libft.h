@@ -6,17 +6,16 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 16:25:37 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/21 18:47:45 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/21 19:19:45 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H // if LIBFT_H no está definido...
-# define LIBFT_H // Defínelo para evitar inclusiones múltiples
+#ifndef LIBFT_H
+# define LIBFT_H
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
 
-// Aquí van las declaraciones de las funciones
 //----------------Bonus part---------------------
 
 typedef struct s_list
