@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olalsanc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 11:21:33 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/06 11:21:35 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/22 18:13:57 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*chek_start(size_t	s_size, unsigned int start)
+static char	*chek_start(size_t	s_size, unsigned int start)
 {
 	char	*new_string;
 
