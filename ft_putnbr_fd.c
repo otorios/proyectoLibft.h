@@ -3,20 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olalsanc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 12:10:05 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/06 12:10:07 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/22 18:04:51 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static void	ft_write_min(int fd)
+{
+	write(fd, "-2147483648", 11);
+	exit(EXIT_SUCCESS);
+}
 
 void	ft_putnbr_fd(int n, int fd)
 {
 	char	buffer[11];
 	int		i;
 
+	if (n == -2147483648)
+		ft_write_min(fd);
 	if (n < 0)
 	{
 		write(fd, "-", 1);
@@ -36,19 +44,22 @@ void	ft_putnbr_fd(int n, int fd)
 	while (i > 0)
 		write(fd, &buffer[--i], 1);
 }
-/*#include <stdio.h>
-int main() {
-    int fd = open("output.txt", O_WRONLY | O_CREAT | O_APPEND, 0644); 
+/* #include <stdio.h>
+#include <fcntl.h>
+
+int	main(void)
+{
+	int fd = open("output.txt", O_WRONLY | O_CREAT | O_APPEND, 0644);
 	// Cambiado a O_APPEND
-    if (fd == -1) {
-        return EXIT_FAILURE; // Manejo de error al abrir el archivo
-    }
+	if (fd == -1) {
+		return (EXIT_FAILURE); // Manejo de error al abrir el archivo
+	}
 
-    ft_putnbr_fd(12345, fd);  
-    ft_putnbr_fd(-6789, fd);
-    ft_putnbr_fd(0, fd);
+	ft_putnbr_fd(12345, fd);
+	ft_putnbr_fd(-6789, fd);
+	ft_putnbr_fd(0, fd);
+	ft_putnbr_fd(-2147483648, fd);
 
-    close(fd); // Cierra el archivo
-    return EXIT_SUCCESS;
-}
-*/
+	close(fd); // Cierra el archivo
+	return (EXIT_SUCCESS);
+} */
