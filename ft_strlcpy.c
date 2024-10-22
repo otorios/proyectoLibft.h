@@ -6,7 +6,7 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 17:12:54 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/19 10:40:45 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/22 16:33:38 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,12 @@ size_t	ft_strlcpy(char	*dst, const char *src, size_t size)
 	dst[i] = '\0';
 	return (src_len);
 }
-/* 
+
 #include <stdio.h>
 #include <string.h>
 int	main(void)
 {
-    char dest[10];
+    /* char dest[10];
     const char *src = "Hello, World!";
     
     printf("Test de ft_strcpy\n");
@@ -48,5 +48,28 @@ int	main(void)
 
 	printf("Test de strlcpy (función original)\n");
 
-	return (0);
-}  */
+	return (0); */
+	char dest[10];
+    const char *src = "Hello, World!";
+    
+    printf("Test de ft_strlcpy\n");
+    
+    size_t len = ft_strlcpy(dest, src, sizeof(dest));
+
+    printf("Copied string: %s\n", dest);
+    printf("Length of source string: %zu\n", len);
+    
+    // Test con cadena vacía
+    const char *empty_src = "";
+    printf("\nTest con cadena vacía\n");
+    len = ft_strlcpy(dest, empty_src, sizeof(dest));
+    printf("Copied string (con cadena vacía): '%s'\n", dest);
+    printf("Length of source string (con cadena vacía): %zu\n", len);
+    
+    printf("Test de strlcpy (función original)\n");
+    
+    // Test con cadena vacía para strlcpy
+    len = ft_strlcpy(dest, empty_src, sizeof(dest));
+    printf("Copied string (strlcpy con cadena vacía): '%s'\n", dest);
+    printf("Length of source string (strlcpy con cadena vacía): %zu\n", len);
+} 

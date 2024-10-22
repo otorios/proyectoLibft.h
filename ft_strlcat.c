@@ -6,7 +6,7 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 17:13:26 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/19 10:54:57 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/22 16:29:31 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	size_t	dest_len;
+	/* size_t	dest_len;
 	size_t	src_len;	
 	size_t	i;
 	size_t	remaining_space;
@@ -33,9 +33,37 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 		i++;
 	}
 	dest[dest_len + i] = '\0';
+	return (dest_len + src_len); */
+	size_t	dest_len;
+	size_t	src_len;
+	size_t	i;
+	size_t	remaining_space;
+
+	dest_len = ft_strlen(dest);   // Longitud del destino
+	src_len = ft_strlen(src);     // Longitud del origen
+
+	// Si no hay espacio suficiente en el buffer para concatenar, devuelve la longitud total que habría resultado
+	if (size <= dest_len)
+		return (size + src_len);
+
+	// Calcula el espacio restante
+	remaining_space = size - dest_len - 1; // -1 para el carácter nulo
+	i = 0;
+
+	// Copia los caracteres de src a dest solo si hay espacio
+	while (i < remaining_space && src[i] != '\0')
+	{
+		dest[dest_len + i] = src[i];
+		i++;
+	}
+
+	// Asegúrate de agregar el carácter nulo solo si hay espacio
+	dest[dest_len + i] = '\0';
+
+	// Devuelve la longitud combinada de dest y src
 	return (dest_len + src_len);
 }
-/* #include <stdio.h>
+ #include <stdio.h>
 
 void test_ft_strlcat(char *buffer, const char *str, 
 					size_t size, const char *expected)
@@ -72,7 +100,11 @@ int main(void)
 	char buffer4[20] = "Non-empty buffer";
 	const char *str4 = "";
 	test_ft_strlcat(buffer4, str4, 20, "Non-empty buffer");
-	// Sin cambios
+	
+
+	char dest[20] = "Non-empty buffer";  // Cadena vacía en el destino
+    const char *src = "";
+	test_ft_strlcat(dest, src, 20, "Non-empty buffer");
 
 	// Test 5: Concatenar a un buffer vacío y con espacio
 	char buffer5[20] = "";
@@ -86,5 +118,9 @@ int main(void)
 	test_ft_strlcat(buffer6, str6, 10, "Hi there!");
 	// No debería cambiar
 
+	char buffer7[20] = ""; // Cadena vacía en el destino
+    const char *str7 = "Hello, world!";
+    test_ft_strlcat(buffer7, str7, 20, "Hi there!");
+
     return (0);
-} */
+} 

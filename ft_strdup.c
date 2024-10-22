@@ -6,7 +6,7 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 17:15:03 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/19 11:29:00 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/22 17:03:37 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ char	*ft_strdup(const char	*s)
 	size_t	len;
 	char	*dup;
 
-	if (s == NULL)
-		return (NULL);
 	len = ft_strlen((char *)s);
 	dup = (char *)malloc(len + 1);
 	if (dup == NULL)
@@ -26,7 +24,8 @@ char	*ft_strdup(const char	*s)
 	ft_memcpy(dup, s, len + 1);
 	return (dup);
 }
-/* #include <stdio.h>
+/* 
+#include <stdio.h>
 //gcc -Wall -Wextra -Werror ft_strdup.c ft_memcpy.c ft_strlen.c 
 int main()
 {
@@ -47,14 +46,6 @@ int main()
 	printf("Original: '%s'\nCopia: '%s'\n", original2, copia2);
 	// Esperado: Copia vacía ''
 	free(copia2); // Liberar memoria
-	printf("\n");
-
-	// Caso 3: Cadena nula
-	const char *original3 = NULL;
-	char *copia3 = ft_strdup(original3);
-	printf("Original: %s\nCopia: %s\n", original3, copia3);
-	// Esperado: Copia es NULL (no se imprime)
-	// (No se libera memoria, ya que es NULL)
 	printf("\n");
 	
 	// Caso 4: Cadena con solo números
@@ -85,7 +76,15 @@ int main()
 	printf("Original: %s\nCopia: %s\n", original6, copia6);
 	// Esperado: Copia igual a la cadena larga
 	free(copia6); // Liberar memoria
+	printf("\n");
+
+	/// Caso 3: Cadena nula
+	const char *original3 = NULL;
+	char *copia3 = ft_strdup(original3);
+	printf("Original: %s\nCopia: %s\n", original3, copia3);
+	// Esperado: Ssegmentation fault
+	// (No se libera memoria, ya que es NULL)
+	printf("\n");
 
 	return (0);
-}
- */
+} */
