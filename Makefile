@@ -6,7 +6,7 @@
 #    By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/10 16:43:00 by olalsanc          #+#    #+#              #
-#    Updated: 2024/10/21 19:20:06 by olalsanc         ###   ########.fr        #
+#    Updated: 2024/10/22 18:08:37 by olalsanc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,6 +32,8 @@ OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
+
+all: $(NAME)
 
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
