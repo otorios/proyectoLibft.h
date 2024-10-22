@@ -6,13 +6,13 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 11:21:18 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/21 19:10:08 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/22 18:15:32 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*print_int_min(void)
+static char	*print_int_min(void)
 {
 	char	*min_int;
 	char	*min_str;
