@@ -6,13 +6,13 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 15:23:53 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/19 10:16:04 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/22 18:14:36 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	is_space(char c)
+static int	is_space(char c)
 {
 	return (c == ' ' || c == '\t' || c == '\n'
 		|| c == '\r' || c == '\v' || c == '\f');
