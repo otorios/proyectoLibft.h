@@ -6,7 +6,7 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 17:13:53 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/24 14:50:37 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/24 19:05:43 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-
+/* 
 #include <stdio.h>
 int	main(void)
 {
@@ -159,4 +159,4 @@ int	main(void)
 	printf("Esperado: NULL (haystack es vacio)\n\n");
     
     return (0);
-}
+} */
