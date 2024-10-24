@@ -6,13 +6,13 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 17:44:39 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/18 18:27:47 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/24 18:00:25 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	char	char_c;
 
@@ -30,19 +30,6 @@ char	*strchr(const char *s, int c)
 	return (NULL);
 }
 /* #include <stdio.h>
-char *ft_strchr(const char *str, char x)
-{
-	while (*str != '\0') 
-	{
-		if (*str == x) 
-		    return (char *)str; // Devuelve la dirección del carácter encontrado
-		str++;
-	}
-	if (*str == x) 
-		return (char *)str; // También puede ser el último carácter
-	return NULL; // No se encontró el carácter. 
-    //Ponemos NULL porque al trabajar con punteros nos lo permite
-}
 
 int	main(void)
 {
