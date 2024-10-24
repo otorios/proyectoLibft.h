@@ -6,7 +6,7 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 17:13:26 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/24 19:10:32 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/24 19:28:22 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,28 @@
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	size_t	dest_len;
-	size_t	src_len;
-	size_t	i;
-	size_t	remaining_space;
+	int	dest_len;
+	int	src_len;
+	int	i;
+	int	remaining_space;
 
 	dest_len = 0;
 	src_len = 0;
 	dest_len = ft_strlen(dest);
 	src_len = ft_strlen(src);
-	if (dest_len == size)
-		return (src_len + src_len);
+	if (dest_len == (int)size)
+		return ((size_t)(src_len + src_len));
 	i = 0;
-	remaining_space = size - dest_len - 1;
+	remaining_space = (int)size - dest_len - 1;
 	while (i < remaining_space && src[i] != '\0')
 	{
 		dest[dest_len + i] = src[i];
 		i++;
 	}
 	dest[dest_len + i] = '\0';
-	return (dest_len + src_len);
+	return ((size_t)(dest_len + src_len));
 }
-/*#include <stdio.h>
+/* #include <stdio.h>
 
 void	test_ft_strlcat(char *buffer, const char *str, size_t size,
 		const char *expected)
