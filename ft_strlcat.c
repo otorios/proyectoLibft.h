@@ -6,7 +6,7 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 17:13:26 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/24 19:28:22 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/24 19:59:42 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	dest_len = ft_strlen(dest);
 	src_len = ft_strlen(src);
 	if (dest_len == (int)size)
-		return ((size_t)(src_len + src_len));
+		return ((size_t)(dest_len + src_len));
 	i = 0;
 	remaining_space = (int)size - dest_len - 1;
 	while (i < remaining_space && src[i] != '\0')
