@@ -6,7 +6,7 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 15:23:53 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/22 18:14:36 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/24 17:53:14 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,14 @@ int	ft_atoi(const char *nptr)
 	num = 0;
 	while (is_space(*nptr))
 		nptr++;
-	while (*nptr == '-' || *nptr == '+')
+	if (*nptr == '-' || *nptr == '+')
 	{
 		if (*nptr == '-')
-			sign *= -1;
+			sign = -1;
 		nptr++;
 	}
+	if (*nptr == '-' || *nptr == '+')
+		return (0);
 	while (*nptr >= '0' && *nptr <= '9')
 	{
 		num = num * 10 + (*nptr - '0');
@@ -42,14 +44,14 @@ int	ft_atoi(const char *nptr)
 }
 /* #include <unistd.h>
 #include <stdio.h>
-
+#include <stdlib.h>
 int	main(void)
 {
 	printf("\nTest de ft_atoi()\n");
 
 	char str1[] = "   42";
 	char str2[] = "   -42";
-	char str3[] = " +++42";
+	char str3[] = " +-42";
 	char str4[] = " ---42";
 	char str5[] = "123abc456";
 	char str6[] = "abc123";
@@ -64,9 +66,9 @@ int	main(void)
 	printf("Input: '%s' => Result: %d\n", str2, ft_atoi(str2));
 	// Debería imprimir: -42
 	printf("Input: '%s' => Result: %d\n", str3, ft_atoi(str3)); 
-	// Debería imprimir: 42
+	// Debería imprimir: 0
 	printf("Input: '%s' => Result: %d\n", str4, ft_atoi(str4));
-	// Debería imprimir: -42
+	// Debería imprimir: 0
 	printf("Input: '%s' => Result: %d\n", str5, ft_atoi(str5));
 	// Debería imprimir: 123
 	printf("Input: '%s' => Result: %d\n", str6, ft_atoi(str6));
@@ -78,7 +80,9 @@ int	main(void)
 	printf("Input: '%s' => Result: %d\n", str9, ft_atoi(str9));
 	// Debería imprimir: 2147483647
 	printf("Input: '%s' => Result: %d\n", str10, ft_atoi(str10));
-	// Debería imprimir: -2147483648
+	// Debería imprimir: -2147483648ç
+
+	printf("Input: '%s' => Result: %d\n", str4, atoi(str4));
 
 	return (0);
 } */

@@ -6,7 +6,7 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 15:59:16 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/18 18:38:37 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/24 14:37:01 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ char	*ft_strrchr(const char *s, int c)
 	char	*position;
 
 	position = NULL;
+	c = (char)c;
 	while (*s != '\0')
 	{
 		if (*s == c)
@@ -27,7 +28,7 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)s);
 	return (position);
 }
-/* 
+
  #include <stdio.h>
 int	main(void)
 {
@@ -94,4 +95,3 @@ int	main(void)
 	}
 	return (0);
 }
- */

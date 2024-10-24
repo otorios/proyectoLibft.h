@@ -6,7 +6,7 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 17:13:53 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/19 11:10:51 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/24 14:50:37 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	if (!*little)
 		return ((char *)big);
+	if (len == 0)
+		 return (NULL);
 	little_len = 0;
 	while (little[little_len] != '\0')
 		little_len++;
@@ -35,13 +37,12 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-/*
+
 #include <stdio.h>
 int	main(void)
 {
-	 printf("Test de ft_strnstr\n");
-	 
-	 
+	printf("Test de ft_strnstr\n");
+	
 	// Caso 1: Haystack nulo
 	const char *haystack1 = "";
 	const char *needle1 = "world";
@@ -134,6 +135,28 @@ int	main(void)
 	else
 		printf("%s\n", result5);
 	printf("Esperado: '' (haystack y needle vacío)\n\n");
+
+	const char *haystack6 = "lorem ipsum dolor sit amet";
+	const char *needle6 = "dolor";
+	char *result6 = ft_strnstr(haystack6, needle6, 0); 
+	// Limitar a 12 caracteres
+	printf("Test 6:\n");
+
+	printf("Haystack: ");
+	if (haystack6 == NULL)
+		printf("NULL\n");
+	else
+		printf("%s\n", haystack6);
+
+	printf("Needle: %s\n", needle6);
+	printf("Longitud: %u\n", 12);
+
+	printf("Resultado: ");
+	if (result6 == NULL)
+		printf("NULL\n");
+	else
+		printf("%s\n", result6);
+	printf("Esperado: NULL (haystack es vacio)\n\n");
     
     return (0);
-} */
+}

@@ -6,7 +6,7 @@
 #    By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/10 16:43:00 by olalsanc          #+#    #+#              #
-#    Updated: 2024/10/22 18:08:37 by olalsanc         ###   ########.fr        #
+#    Updated: 2024/10/24 17:39:42 by olalsanc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME = libft.a
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
 
-SRC = ft_atoi.c     ft_lstadd_back_bonus.c   ft_memchr.c      ft_split.c     ft_strncmp.c \
+SRC = ft_atoi.c       ft_memchr.c      ft_split.c     ft_strncmp.c \
 		ft_bzero.c    ft_memcmp.c      ft_strchr.c    ft_strnstr.c \
 		ft_calloc.c   ft_memcpy.c      ft_strdup.c    ft_strrchr.c \
 		ft_isalnum.c  ft_memmove.c     ft_striteri.c  ft_strtrim.c \
