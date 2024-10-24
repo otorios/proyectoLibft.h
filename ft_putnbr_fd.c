@@ -6,17 +6,11 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 12:10:05 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/22 18:04:51 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/24 18:52:37 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static void	ft_write_min(int fd)
-{
-	write(fd, "-2147483648", 11);
-	exit(EXIT_SUCCESS);
-}
 
 void	ft_putnbr_fd(int n, int fd)
 {
@@ -24,7 +18,7 @@ void	ft_putnbr_fd(int n, int fd)
 	int		i;
 
 	if (n == -2147483648)
-		ft_write_min(fd);
+		return ((void)write(fd, "-2147483648", 11));
 	if (n < 0)
 	{
 		write(fd, "-", 1);
