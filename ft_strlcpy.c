@@ -6,7 +6,7 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 17:12:54 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/24 18:14:44 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/24 19:11:01 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ size_t	ft_strlcpy(char	*dst, const char *src, size_t size)
 	dst[i] = '\0';
 	return (src_len);
 }
-
+/* 
 #include <stdio.h>
 #include <string.h>
 int	main(void)
@@ -59,4 +59,4 @@ int	main(void)
     len = ft_strlcpy(dest, empty_src, sizeof(dest));
     printf("Copied string (strlcpy con cadena vacía): '%s'\n", dest);
     printf("Length of source string (strlcpy con cadena vacía): %zu\n", len);
-} 
+}  */

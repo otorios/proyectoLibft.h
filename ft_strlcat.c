@@ -6,7 +6,7 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 17:13:26 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/22 18:25:17 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/24 19:10:32 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t	dest_len;
-	size_t	src_len;	
+	size_t	src_len;
 	size_t	i;
 	size_t	remaining_space;
 
@@ -35,35 +35,37 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	dest[dest_len + i] = '\0';
 	return (dest_len + src_len);
 }
- #include <stdio.h>
+/*#include <stdio.h>
 
-void test_ft_strlcat(char *buffer, const char *str, 
-					size_t size, const char *expected)
+void	test_ft_strlcat(char *buffer, const char *str, size_t size,
+		const char *expected)
 {
+	size_t	len;
+
 	printf("Buffer antes: %s\n", buffer);
-	size_t len = ft_strlcat(buffer, str, size);
+	len = ft_strlcat(buffer, str, size);
 	printf("Longitud devuelta por ft_strlcat: %zu\n", len);
 	printf("Buffer después: %s\n", buffer);
 	printf("Resultado esperado: %s\n", expected);
 	printf("===\n");
 }
 
-int main(void)
+int	main(void)
 {
 	// Test 1: Concatenar cadenas que caben sin problemas
 	char buffer1[20] = "Hello, ";
 	const char *str1 = "world!";
 	test_ft_strlcat(buffer1, str1, 20, "Hello, world!");
 
-	// Test 2: Concatenar cuando el buffer está casi lleno 
-	//y no tiene espacio para todo
+	// Test 2: Concatenar cuando el buffer está casi lleno
+	// y no tiene espacio para todo
 	char buffer2[20] = "1234567890123456789"; // 19 caracteres
-	const char *str2 = "0"; // Agregar solo un carácter
+	const char *str2 = "0";                   // Agregar solo un carácter
 	test_ft_strlcat(buffer2, str2, 20, "12345678901234567890");
 	// Más de 20, debería truncar
 
-	// Test 3: Concatenar cuando el buffer ya está lleno 
-	//y no tiene espacio para todo
+	// Test 3: Concatenar cuando el buffer ya está lleno
+	// y no tiene espacio para todo
 	char buffer3[20] = "Full buffer!"; // 13 caracteres
 	const char *str3 = "Trying to add more.";
 	test_ft_strlcat(buffer3, str3, 20, "Full buffer!Trying");
@@ -76,7 +78,7 @@ int main(void)
 	// Test 5: Concatenar a un buffer vacío y con espacio
 	char buffer5[20] = "";
 	const char *str5 = "New content!";
-	test_ft_strlcat(buffer5, str5, 20, "New content!"); 
+	test_ft_strlcat(buffer5, str5, 20, "New content!");
 	// Debería ser "New content!"
 
 	// Test 6: Concatenar con size pequeño pero espacio suficiente
@@ -86,8 +88,8 @@ int main(void)
 	// No debería cambiar
 
 	char buffer7[20] = "0"; // Cadena vacía en el destino
-    const char *str7 = "Hello, world!";
-    test_ft_strlcat(buffer7, str7, 20, "Hi there!");
+	const char *str7 = "Hello, world!";
+	test_ft_strlcat(buffer7, str7, 20, "Hi there!");
 
-    return (0);
-} 
+	return (0);
+} */
