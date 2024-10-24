@@ -6,7 +6,7 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 16:25:37 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/21 19:19:45 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/24 18:14:44 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ size_t				ft_strlen(const char *str);
 void				ft_bzero(void *s, size_t n);
 void				*ft_memset(void *s, int c, size_t n);
 void				*ft_memcpy(void *dest, const void *src, size_t n);
-char				*strchr(const char *s, int c);
+char				*ft_strchr(const char *s, int c);
 char				*ft_strrchr(const char *s, int c);
 void				*ft_memchr(const void *s, int c, size_t n);
 int					ft_memcmp(const void *str1, const void *str2,

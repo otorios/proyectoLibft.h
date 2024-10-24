@@ -6,7 +6,7 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 17:12:54 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/22 16:33:38 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/24 18:14:44 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,19 +36,6 @@ size_t	ft_strlcpy(char	*dst, const char *src, size_t size)
 #include <string.h>
 int	main(void)
 {
-    /* char dest[10];
-    const char *src = "Hello, World!";
-    
-    printf("Test de ft_strcpy\n");
-    
-    size_t len = ft_strlcpy(dest, src, sizeof(dest));
-
-    printf("Copied string: %s\n", dest);
-    printf("Length of source string: %zu\n", len);
-
-	printf("Test de strlcpy (función original)\n");
-
-	return (0); */
 	char dest[10];
     const char *src = "Hello, World!";
     

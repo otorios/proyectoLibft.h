@@ -6,7 +6,7 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 15:59:16 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/24 14:37:01 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/24 18:07:19 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)s);
 	return (position);
 }
-
- #include <stdio.h>
+/* 
+#include <stdio.h>
 int	main(void)
 {
 	printf("\nTest de ft_strrchr()\n");
@@ -95,3 +95,4 @@ int	main(void)
 	}
 	return (0);
 }
+ */
