@@ -6,7 +6,7 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 15:59:47 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/21 19:08:29 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/25 17:52:35 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,8 @@ int main(void)
     {
         printf("%s\n", (char *)temp->content);
         temp = temp->next;
-    }
+    } 
+    //printf("%s\n", (char *)ft_lstlast(lista)->content);
 
     return (0);
 } */
