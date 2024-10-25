@@ -6,7 +6,7 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 17:13:53 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/24 19:08:36 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/25 19:29:30 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	if (!*little)
 		return ((char *)big);
-	if (len == 0)
+	if (len == 0  || len < ft_stren(little))
 		return (NULL);
 	little_len = 0;
 	while (little[little_len] != '\0')
