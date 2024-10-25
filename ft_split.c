@@ -6,7 +6,7 @@
 /*   By: olalsanc <olalsanc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 11:23:49 by olalsanc          #+#    #+#             */
-/*   Updated: 2024/10/25 18:51:32 by olalsanc         ###   ########.fr       */
+/*   Updated: 2024/10/25 18:52:49 by olalsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,28 +103,7 @@ char	**ft_split(char const *s, char c)
 	result[i] = NULL;
 	return (result);
 }
-/*
-while (*s != '\0')
-	{
-		if (*s != c)
-		{
-			word_len = ft_strlen(s);
-			while (s[word_len] != '\0' && s[word_len] != c)
-				word_len++;
-			if (!result[i++]) // liberar si falla
-			{
-				while (--i >= 0)
-					free(result[i]);
-				free(result);
-				return (NULL);
-			}
-			s += word_len;
-		}
-		else
-			s++;
-	}
-	*/
-#include <stdio.h>
+/* #include <stdio.h>
 
 int	main(void)
 {
@@ -159,4 +138,4 @@ int	main(void)
 	}
 	free(result); // Libera el array de punteros
 	return (0);
-}
+} */
