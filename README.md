@@ -4,12 +4,38 @@
 
 ## Índice
 
-1. [Descripción del Proyecto y Círculo de Proyectos - Primer Círculo (Pace)](#Descripción del Proyecto y Círculo de Proyectos - Primer Círculo (Pace))
+1. [Descripción del Proyecto y Círculo de Proyectos - Primer Círculo (Pace)](#Descripción-del-Proyecto-y-Círculo-de-Proyectos---Primer-Círculo-Pace)
 2. [Propósito del Proyecto](#propósito-del-proyecto)
 3. [Estructura del Proyecto](#estructura-del-proyecto)
 4. [Parte Obligatoria](#parte-obligatoria)
+   1. [Funciones de la libc](#funciones-de-la-libc-a-implementar-y-sus-definiciones)
+      - **ft_isalpha**
+      - **ft_isdigit**
+      - **ft_isalnum**
+      - **ft_isascii**
+      - **ft_isprint**
+      - **ft_strlen**
+      - **ft_memset**
+      - **ft_bzero**
+      - **ft_memcpy**
+      - **ft_memmove**
+      - **ft_strlcpy**
+      - **ft_strlcat**
+      - **ft_toupper**
+      - **ft_tolower**
+      - **ft_strchr**
+      - **ft_strrchr**
+      - **ft_strncmp**
+      - **ft_memchr**
+      - **ft_memcmp**
+      - **ft_strnstr**
+      - **ft_atoi**
+      - **ft_calloc**
+      - **ft_strdup**
 5. [Parte Bonus](#parte-bonus)
+   1. [Funciones adicionales para manipulación de listas](#funciones-adicionales-para-manipulación-de-listas-y-sus-definiciónes)
 6. [Cómo Compilar](#cómo-compilar)
+
 
 ---
 
@@ -40,33 +66,7 @@ libft/ Makefile # Script de compilación libft.h # Archivo de cabecera con decla
 
 ## Parte Obligatoria
 
-### Funciones de la libc a implementar
-
-- `ft_isalpha`  
-- `ft_isdigit`  
-- `ft_isalnum`  
-- `ft_isascii`  
-- `ft_isprint`  
-- `ft_strlen`  
-- `ft_memset`  
-- `ft_bzero`  
-- `ft_memcpy`  
-- `ft_memmove`  
-- `ft_strlcpy`  
-- `ft_strlcat`  
-- `ft_toupper`  
-- `ft_tolower`  
-- `ft_strchr`  
-- `ft_strrchr`  
-- `ft_strncmp`  
-- `ft_memchr`  
-- `ft_memcmp`  
-- `ft_strnstr`  
-- `ft_atoi`  
-- `ft_calloc`  
-- `ft_strdup`
-
-### Definición de las funciones (Parte Obligatoria)
+### Funciones de la libc a implementar y sus definiciones
 
 1. **`ft_isalpha`**  
    - Verifica si un carácter es alfabético.
@@ -139,19 +139,7 @@ libft/ Makefile # Script de compilación libft.h # Archivo de cabecera con decla
 
 ## Parte Bonus
 
-### Funciones adicionales para manipulación de listas:
-
-- `ft_lstnew`  
-- `ft_lstadd_front`  
-- `ft_lstsize`  
-- `ft_lstlast`  
-- `ft_lstadd_back`  
-- `ft_lstdelone`  
-- `ft_lstclear`  
-- `ft_lstiter`  
-- `ft_lstmap`
-
-### Definición de las funciones (Parte Bonus)
+### Funciones adicionales para manipulación de listas y sus definiciónes:
 
 1. **`ft_lstnew`**  
    - Crea un nuevo nodo en una lista enlazada.  
