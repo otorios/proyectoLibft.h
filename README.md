@@ -4,7 +4,7 @@
 
 ## Índice
 
-1. [Descripción del Proyecto y Círculo de Proyectos - Primer Círculo (Pace)](#Descripción-del-Proyecto-y-Círculo-de-Proyectos---Primer-Círculo-Pace)
+1. [Descripción del Proyecto y Círculo de Proyectos - Primer Círculo (Pace)](#descripción-del-proyecto-y-círculo-de-proyectos---primer-círculo-pace)
 2. [Propósito del Proyecto](#propósito-del-proyecto)
 3. [Estructura del Proyecto](#estructura-del-proyecto)
 4. [Parte Obligatoria](#parte-obligatoria)
