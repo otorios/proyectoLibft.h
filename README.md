@@ -9,16 +9,13 @@
 3. [Estructura del Proyecto](#estructura-del-proyecto)
 4. [Parte Obligatoria](#parte-obligatoria)
    - [Funciones de la libc](#funciones-de-la-libc-a-implementar-y-sus-definiciones)
-     | **Columna 1** | **Columna 2** | **Columna 3** |
-     | ------------- | ------------- | ------------- |
-     | [ft_isalpha](#ft_isalpha)  | [ft_isdigit](#ft_isdigit)  | [ft_isalnum](#ft_isalnum) |
-     | [ft_isascii](#ft_isascii)  | [ft_isprint](#ft_isprint)  | [ft_strlen](#ft_strlen) |
-     | [ft_memset](#ft_memset)    | [ft_bzero](#ft_bzero)      | [ft_memcpy](#ft_memcpy) |
-     | [ft_memmove](#ft_memmove)  | [ft_strlcpy](#ft_strlcpy)  | [ft_strlcat](#ft_strlcat) |
-     | [ft_toupper](#ft_toupper)  | [ft_tolower](#ft_tolower)  | [ft_strchr](#ft_strchr) |
-     | [ft_strrchr](#ft_strrchr)  | [ft_strncmp](#ft_strncmp)  | [ft_memchr](#ft_memchr) |
-     | [ft_memcmp](#ft_memcmp)    | [ft_strnstr](#ft_strnstr)  | [ft_atoi](#ft_atoi) |
-     | [ft_calloc](#ft_calloc)    | [ft_strdup](#ft_strdup)    |                         |
+    | **Columna 1**   | **Columna 2**   | **Columna 3**   | **Columna 4**   | **Columna 5**   |
+| --------------- | --------------- | --------------- | --------------- | --------------- |
+| [ft_isalpha](#ft_isalpha)   | [ft_isdigit](#ft_isdigit)   | [ft_isalnum](#ft_isalnum)   | [ft_isascii](#ft_isascii)   | [ft_isprint](#ft_isprint)   |
+| [ft_strlen](#ft_strlen)     | [ft_memset](#ft_memset)     | [ft_bzero](#ft_bzero)       | [ft_memcpy](#ft_memcpy)     | [ft_memmove](#ft_memmove)   |
+| [ft_strlcpy](#ft_strlcpy)   | [ft_strlcat](#ft_strlcat)   | [ft_toupper](#ft_toupper)   | [ft_tolower](#ft_tolower)   | [ft_strchr](#ft_strchr)     |
+| [ft_strrchr](#ft_strrchr)   | [ft_strncmp](#ft_strncmp)   | [ft_memchr](#ft_memchr)     | [ft_memcmp](#ft_memcmp)     | [ft_strnstr](#ft_strnstr)   |
+| [ft_atoi](#ft_atoi)         | [ft_calloc](#ft_calloc)     | [ft_strdup](#ft_strdup)     |                       |                       |
 5. [Parte Bonus](#parte-bonus)
    - [Funciones adicionales para manipulación de listas](#funciones-adicionales-para-manipulación-de-listas-y-sus-definiciónes)
      | **Columna 1** | **Columna 2** | **Columna 3** |
