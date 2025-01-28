@@ -73,145 +73,22 @@ libft/ Makefile # Script de compilación libft.h # Archivo de cabecera con decla
    - **Prototipo estándar:** `int tolower(int c);`
    - **Usos en otras funciones:** Similar a `ft_toupper`, puede ser utilizada dentro de funciones como `ft_striteri` para modificar los caracteres de una cadena.
 
----
+1. **`ft_isascii`**  
+   - Verifica si un carácter es un carácter ASCII válido.  
+   - **Prototipo estándar:** `int isascii(int c);`  
+   - **Usos en otras funciones:** No se utiliza directamente en otras funciones, aunque es útil en funciones como `ft_isalpha`, `ft_isalnum`, etc.
 
-### 4. `ft_isdigit`
-   - **Definición:** Verifica si un carácter es un dígito.
-   - **Prototipo estándar:** `int isdigit(int c);`
-   - **Usos en otras funciones:** Puede ser utilizada en funciones como `ft_isalnum` para comprobar si un carácter es alfanumérico.
+2. **`ft_toupper`**  
+   - Convierte un carácter a mayúsculas.  
+   - **Prototipo estándar:** `int toupper(int c);`  
+   - **Usos en otras funciones:** Puede ser utilizada dentro de la función `ft_striteri` para modificar los caracteres de una cadena.
 
----
+3. **`ft_tolower`**  
+   - Convierte un carácter a minúsculas.  
+   - **Prototipo estándar:** `int tolower(int c);`  
+   - **Usos en otras funciones:** Similar a `ft_toupper`, puede ser utilizada dentro de funciones como `ft_striteri` para modificar los caracteres de una cadena.
 
-### 5. `ft_isalpha`
-   - **Definición:** Verifica si un carácter es alfabético.
-   - **Prototipo estándar:** `int isalpha(int c);`
-   - **Usos en otras funciones:** Puede ser utilizada en funciones como `ft_isalnum` y `ft_isprint`.
 
----
-
-### 6. `ft_isalnum`
-   - **Definición:** Verifica si un carácter es alfabético o un dígito.
-   - **Prototipo estándar:** `int isalnum(int c);`
-   - **Usos en otras funciones:** Puede ser utilizada en funciones como `ft_isalpha` y `ft_isdigit` para verificar caracteres.
-
----
-
-### 7. `ft_isprint`
-   - **Definición:** Verifica si un carácter es un carácter imprimible.
-   - **Prototipo estándar:** `int isprint(int c);`
-   - **Usos en otras funciones:** Puede usarse en funciones que requieren verificar la imprimibilidad de un carácter, como en `ft_striteri`.
-
----
-
-### 8. `ft_strlen`
-   - **Definición:** Devuelve la longitud de una cadena.
-   - **Prototipo estándar:** `size_t strlen(const char *s);`
-   - **Usos en otras funciones:** Se utiliza en funciones como `ft_memset`, `ft_bzero`, `ft_strlcpy`, etc.
-
----
-
-### 9. `ft_bzero`
-   - **Definición:** Establece a cero una porción de memoria.
-   - **Prototipo estándar:** `void bzero(void *s, size_t len);`
-   - **Usos en otras funciones:** Puede ser utilizada en `ft_memset` para inicializar bloques de memoria a cero.
-
----
-
-### 10. `ft_memset`
-   - **Definición:** Establece un valor específico en una porción de memoria.
-   - **Prototipo estándar:** `void *memset(void *s, int c, size_t len);`
-   - **Usos en otras funciones:** Se utiliza en funciones como `ft_bzero`, `ft_memmove`, `ft_strlcpy`, etc.
-
----
-
-### 11. `ft_memcpy`
-   - **Definición:** Copia una porción de memoria de un lugar a otro.
-   - **Prototipo estándar:** `void *memcpy(void *dest, const void *src, size_t n);`
-   - **Usos en otras funciones:** Puede usarse en otras funciones que requieren copiar memoria, como `ft_memmove`.
-
----
-
-### 12. `ft_strchr`
-   - **Definición:** Devuelve un puntero a la primera aparición de un carácter en una cadena.
-   - **Prototipo estándar:** `char *strchr(const char *s, int c);`
-   - **Usos en otras funciones:** Puede ser utilizada dentro de `ft_strrchr` y `ft_strnstr` para buscar caracteres en cadenas.
-
----
-
-### 13. `ft_strrchr`
-   - **Definición:** Devuelve un puntero a la última aparición de un carácter en una cadena.
-   - **Prototipo estándar:** `char *strrchr(const char *s, int c);`
-   - **Usos en otras funciones:** Utiliza `ft_strchr` para buscar desde el final hacia el principio de la cadena.
-
----
-
-### 14. `ft_memchr`
-   - **Definición:** Busca un carácter en una porción de memoria.
-   - **Prototipo estándar:** `void *memchr(const void *s, int c, size_t n);`
-   - **Usos en otras funciones:** Puede ser utilizada para buscar en bloques de memoria como en `ft_memcmp`.
-
----
-
-### 15. `ft_memcmp`
-   - **Definición:** Compara dos bloques de memoria.
-   - **Prototipo estándar:** `int memcmp(const void *s1, const void *s2, size_t n);`
-   - **Usos en otras funciones:** Puede ser utilizada para comparar bloques de memoria, como en `ft_memchr`.
-
----
-
-### 16. `ft_strncmp`
-   - **Definición:** Compara dos cadenas, hasta un número dado de caracteres.
-   - **Prototipo estándar:** `int strncmp(const char *s1, const char *s2, size_t n);`
-   - **Usos en otras funciones:** Puede ser utilizada dentro de `ft_strnstr` para comparar cadenas con límite de longitud.
-
----
-
-### 17. `ft_atoi`
-   - **Definición:** Convierte una cadena de caracteres a un número entero.
-   - **Prototipo estándar:** `int atoi(const char *str);`
-   - **Usos en otras funciones:** Puede usarse para convertir cadenas a enteros en el proceso de análisis de datos.
-
----
-
-### 18. `ft_memmove`
-   - **Definición:** Copia una porción de memoria, manejando correctamente el solapamiento de bloques de memoria.
-   - **Prototipo estándar:** `void *memmove(void *dest, const void *src, size_t len);`
-   - **Usos en otras funciones:** Se puede usar para mover bloques de memoria en funciones como `ft_memcpy` y `ft_memset`.
-
----
-
-### 19. `ft_strlcpy`
-   - **Definición:** Copia una cadena asegurando no sobrepasar el límite de longitud.
-   - **Prototipo estándar:** `size_t strlcpy(char *dest, const char *src, size_t size);`
-   - **Usos en otras funciones:** Puede ser utilizada en funciones como `ft_strlcat` para concatenar de manera segura cadenas.
-
----
-
-### 20. `ft_strlcat`
-   - **Definición:** Concatenación de cadenas asegurando no sobrepasar el límite de longitud.
-   - **Prototipo estándar:** `size_t strlcat(char *dest, const char *src, size_t size);`
-   - **Usos en otras funciones:** Puede usarse en la manipulación de cadenas, especialmente en funciones que concatenan cadenas como `ft_strlcpy`.
-
----
-
-### 21. `ft_strnstr`
-   - **Definición:** Busca una subcadena dentro de una cadena, con una longitud máxima.
-   - **Prototipo estándar:** `char *strnstr(const char *haystack, const char *needle, size_t len);`
-   - **Usos en otras funciones:** Puede ser utilizada para buscar una subcadena dentro de una cadena de forma eficiente.
-
----
-
-### 22. `ft_calloc`
-   - **Definición:** Asigna memoria y la inicializa a cero.
-   - **Prototipo estándar:** `void *calloc(size_t nmemb, size_t size);`
-   - **Usos en otras funciones:** Se puede usar para inicializar memoria a cero, comúnmente en `ft_strdup`.
-
----
-
-### 23. `ft_strdup`
-   - **Definición:** Duplica una cadena, asignando memoria dinámicamente.
-   - **Prototipo estándar:** `char *strdup(const char *s);`
-   - **Usos en otras funciones:** Puede ser utilizada en varias funciones para duplicar cadenas, por ejemplo, en `ft_split`.
 
 1. **`ft_isalpha`**  
    - Verifica si un carácter es alfabético.
