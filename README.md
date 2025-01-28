@@ -8,20 +8,27 @@
 2. [Propósito del Proyecto](#propósito-del-proyecto)
 3. [Estructura del Proyecto](#estructura-del-proyecto)
 4. [Parte Obligatoria](#parte-obligatoria)
-   - [Funciones de la libc](#funciones-de-la-libc-a-implementar-y-sus-definiciones)
-     | [ft_isalpha](#ft_isalpha)   | [ft_isdigit](#ft_isdigit)   | [ft_isalnum](#ft_isalnum)   | [ft_isascii](#ft_isascii)   |
-     | --------------------------- | --------------------------- | --------------------------- | --------------------------- |
-     | [ft_isprint](#ft_isprint)    | [ft_strlen](#ft_strlen)     | [ft_memset](#ft_memset)     | [ft_bzero](#ft_bzero)       |
-     | [ft_memcpy](#ft_memcpy)      | [ft_memmove](#ft_memmove)   | [ft_strlcpy](#ft_strlcpy)   | [ft_strlcat](#ft_strlcat)   |
-     | [ft_toupper](#ft_toupper)   | [ft_tolower](#ft_tolower)   | [ft_strchr](#ft_strchr)     | [ft_strrchr](#ft_strrchr)   |
-     | [ft_strncmp](#ft_strncmp)   | [ft_memchr](#ft_memchr)     | [ft_memcmp](#ft_memcmp)     | [ft_strnstr](#ft_strnstr)   |
-     | [ft_atoi](#ft_atoi)         | [ft_calloc](#ft_calloc)     | [ft_strdup](#ft_strdup)     |                           |
+   - [Funciones de la libc a implementar y sus definiciones](#funciones-de-la-libc-a-implementar-y-sus-definiciones)
+   - [Parte Obligatoria 1](#parte-obligatoria-1)
+     | [ft_isascii](#ft_isascii) | [ft_toupper](#ft_toupper) | [ft_tolower](#ft_tolower) | [ft_isdigit](#ft_isdigit) |
+     | ------------------------- | ------------------------- | ------------------------- | ------------------------- |
+     | [ft_isalpha](#ft_isalpha) | [ft_isalnum](#ft_isalnum) | [ft_isprint](#ft_isprint) | [ft_strlen](#ft_strlen) |
+     | [ft_bzero](#ft_bzero)     | [ft_memset](#ft_memset)   | [ft_memcpy](#ft_memcpy)   | [ft_memmove](#ft_memmove) |
+     | [ft_strlcpy](#ft_strlcpy) | [ft_strlcat](#ft_strlcat) | [ft_toupper](#ft_toupper) | [ft_tolower](#ft_tolower) |
+     | [ft_strchr](#ft_strchr)   | [ft_strrchr](#ft_strrchr) | [ft_memchr](#ft_memchr)   | [ft_memcmp](#ft_memcmp)   |
+     | [ft_strncmp](#ft_strncmp) | [ft_strnstr](#ft_strnstr) | [ft_atoi](#ft_atoi)       | [ft_calloc](#ft_calloc)   |
+     | [ft_strdup](#ft_strdup)   |                           |                           |                           |
+   - [Parte Obligatoria 2](#parte-obligatoria-2)
+     | [ft_putchar_fd](#ft_putchar_fd) | [ft_putstr_fd](#ft_putstr_fd) | [ft_putendl_fd](#ft_putendl_fd) | [ft_putnbr_fd](#ft_putnbr_fd) |
+     | ------------------------------ | ----------------------------- | ----------------------------- | --------------------------- |
+     | [ft_itoa](#ft_itoa)           | [ft_substr](#ft_substr)     | [ft_strtrim](#ft_strtrim)     | [ft_striteri](#ft_striteri) |
+     | [ft_strmapi](#ft_strmapi)     | [ft_strjoin](#ft_strjoin)   | [ft_split](#ft_split)         |                           |
 5. [Parte Bonus](#parte-bonus)
-   - [Funciones adicionales para manipulación de listas](#funciones-adicionales-para-manipulación-de-listas-y-sus-definiciones)
-     | [ft_lstnew](#ft_lstnew)    | [ft_lstadd_front](#ft_lstadd_front) | [ft_lstsize](#ft_lstsize) |
-     | -------------------------- | --------------------------- | --------------------------- |
-     | [ft_lstlast](#ft_lstlast)  | [ft_lstadd_back](#ft_lstadd_back) | [ft_lstdelone](#ft_lstdelone) |
-     | [ft_lstclear](#ft_lstclear) | [ft_lstiter](#ft_lstiter)    | [ft_lstmap](#ft_lstmap)     |
+   - [Funciones adicionales para manipulación de listas y sus definiciones](#funciones-adicionales-para-manipulación-de-listas-y-sus-definiciones)
+     | [ft_lstnew](#ft_lstnew)     | [ft_lstadd_front](#ft_lstadd_front) | [ft_lstsize](#ft_lstsize)     |
+     | --------------------------  | ---------------------------- | ---------------------------- |
+     | [ft_lstlast](#ft_lstlast)    | [ft_lstadd_back](#ft_lstadd_back) | [ft_lstdelone](#ft_lstdelone) |
+     | [ft_lstclear](#ft_lstclear)  | [ft_lstiter](#ft_lstiter)   | [ft_lstmap](#ft_lstmap)       |
 6. [Cómo Compilar](#cómo-compilar)
 
 ---
@@ -275,10 +282,8 @@ libft/ Makefile # Script de compilación libft.h # Archivo de cabecera con decla
    - Crea una nueva lista aplicando una función a cada nodo de la lista original.  
    - **Prototipo estándar:** `t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));`  
    - **Usos en otras funciones:** Se utiliza para transformar la lista original creando una nueva lista con los resultados de la función aplicada.
+
 ---
-
-¡Ahora tienes el formato adecuado para tu README!
-
 
 ## Cómo Compilar
 
