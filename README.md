@@ -1,5 +1,7 @@
 # libft - Tu primera librería
 
+---
+
 ## Índice
 
 1. [Descripción del Proyecto y Círculo de Proyectos - Primer Círculo (Pace)](#Descripción del Proyecto y Círculo de Proyectos - Primer Círculo (Pace))
@@ -8,7 +10,6 @@
 4. [Parte Obligatoria](#parte-obligatoria)
 5. [Parte Bonus](#parte-bonus)
 6. [Cómo Compilar](#cómo-compilar)
-7. [Licencia](#licencia)
 
 ---
 
@@ -196,8 +197,6 @@ libft/ Makefile # Script de compilación libft.h # Archivo de cabecera con decla
    - Aplica una función a cada nodo de la lista y devuelve una nueva lista con los resultados.  
    - Parámetros: `t_list *lst`, `void *(*f)(void *)`, `void (*del)(void *)`  
    - Retorno: La nueva lista.
-
----
 
 ## Cómo Compilar
 
