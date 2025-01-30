@@ -10,6 +10,7 @@
 4. [Parte Obligatoria](#parte-obligatoria)
    - [Funciones de la libc a implementar y sus definiciones](#funciones-de-la-libc-a-implementar-y-sus-definiciones)
    - [Parte Obligatoria 1](#parte-obligatoria-1)
+   - [ft_isascii](#ft_isascii)
      | N°  | Función          | N°  | Función          | N°  | Función          | N°  | Función          |
      |---- |---------------- |---- |---------------- |---- |---------------- |---- |---------------- |
      | 1   | [ft_isascii](#ft_isascii)   | 6   | [ft_isalnum](#ft_isalnum)   | 11  | [ft_memcpy](#ft_memcpy)     | 16  | [ft_strrchr](#ft_strrchr)   |
