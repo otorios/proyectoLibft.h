@@ -66,221 +66,221 @@ libft/ Makefile # Script de compilación libft.h # Archivo de cabecera con decla
 
 1. **`ft_isascii`**  
    - Verifica si un carácter es un carácter ASCII válido.  
-   - **Prototipo estándar:** `int isascii(int c);`  
+   - **Prototipo:** `int ft_isascii(int c);`  
    - **Usos en otras funciones:** No se utiliza directamente en otras funciones, aunque es útil en funciones como `ft_isalpha`, `ft_isalnum`, etc.
 
 2. **`ft_toupper`**  
    - Convierte un carácter a mayúsculas.  
-   - **Prototipo estándar:** `int toupper(int c);`  
+   - **Prototipo:** `int ft_tolower(int c);`  
    - **Usos en otras funciones:** Puede ser utilizada dentro de la función `ft_striteri` para modificar los caracteres de una cadena.
 
 3. **`ft_tolower`**  
    - Convierte un carácter a minúsculas.  
-   - **Prototipo estándar:** `int tolower(int c);`  
+   - **Prototipo:** `int tolower(int c);`  
    - **Usos en otras funciones:** Similar a `ft_toupper`, puede ser utilizada dentro de funciones como `ft_striteri` para modificar los caracteres de una cadena.
 
 4. **`ft_isdigit`**  
    - Verifica si un carácter es un dígito.  
-   - **Prototipo estándar:** `int isdigit(int c);`  
+   - **Prototipo:** `int ft_isdigit(int number);`  
    - **Usos en otras funciones:** Puede ser utilizada en funciones como `ft_isalnum` para comprobar si un carácter es alfanumérico.
 
 5. **`ft_isalpha`**  
    - Verifica si un carácter es alfabético.  
-   - **Prototipo estándar:** `int isalpha(int c);`  
+   - **Prototipo:** `int ft_isalpha(int c);`  
    - **Usos en otras funciones:** Puede ser utilizada en funciones como `ft_isalnum` y `ft_isprint`.
 
 6. **`ft_isalnum`**  
    - Verifica si un carácter es alfabético o un dígito.  
-   - **Prototipo estándar:** `int isalnum(int c);`  
+   - **Prototipo:** `int ft_isalnum(int c);`  
    - **Usos en otras funciones:** Puede ser utilizada en funciones como `ft_isalpha` y `ft_isdigit` para verificar caracteres.
 
 7. **`ft_isprint`**  
    - Verifica si un carácter es un carácter imprimible.  
-   - **Prototipo estándar:** `int isprint(int c);`  
+   - **Prototipo:** `int ft_isprint(int c);`  
    - **Usos en otras funciones:** Puede usarse en funciones que requieren verificar la imprimibilidad de un carácter, como en `ft_striteri`.
 
 8. **`ft_strlen`**  
    - Devuelve la longitud de una cadena.  
-   - **Prototipo estándar:** `size_t strlen(const char *s);`  
+   - **Prototipo:** `size_t ft_strlen(const char *s);`  
    - **Usos en otras funciones:** Se utiliza en funciones como `ft_memset`, `ft_bzero`, `ft_strlcpy`, etc.
 
 9. **`ft_bzero`**  
    - Establece a cero una porción de memoria.  
-   - **Prototipo estándar:** `void bzero(void *s, size_t len);`  
+   - **Prototipo:** `void ft_bzero(void *s, size_t len);`  
    - **Usos en otras funciones:** Puede ser utilizada en `ft_memset` para inicializar bloques de memoria a cero.
 
 10. **`ft_memset`**  
     - Establece un valor específico en una porción de memoria.  
-    - **Prototipo estándar:** `void *memset(void *s, int c, size_t len);`  
+    - **Prototipo:** `void *ft_memset(void *s, int c, size_t n);`  
     - **Usos en otras funciones:** Se utiliza en funciones como `ft_bzero`, `ft_memmove`, `ft_strlcpy`, etc.
 
 11. **`ft_memcpy`**  
     - Copia una porción de memoria de un lugar a otro.  
-    - **Prototipo estándar:** `void *memcpy(void *dest, const void *src, size_t n);`  
+    - **Prototipo:** `void *ft_memcpy(void *dest, const void *src, size_t n);`  
     - **Usos en otras funciones:** Puede usarse en otras funciones que requieren copiar memoria, como `ft_memmove`.
 
 12. **`ft_strchr`**  
     - Devuelve un puntero a la primera aparición de un carácter en una cadena.  
-    - **Prototipo estándar:** `char *strchr(const char *s, int c);`  
+    - **Prototipo:** `char *ft_strchr(const char *s, int c);`  
     - **Usos en otras funciones:** Puede ser utilizada dentro de `ft_strrchr` y `ft_strnstr` para buscar caracteres en cadenas.
 
 13. **`ft_strrchr`**  
     - Devuelve un puntero a la última aparición de un carácter en una cadena.  
-    - **Prototipo estándar:** `char *strrchr(const char *s, int c);`  
+    - **Prototipo:** `char *ft_ft_strrchr(const char *big, const char *little, size_t len);`  
     - **Usos en otras funciones:** Utiliza `ft_strchr` para buscar desde el final hacia el principio de la cadena.
 
 14. **`ft_memchr`**  
     - Busca un carácter en una porción de memoria.  
-    - **Prototipo estándar:** `void *memchr(const void *s, int c, size_t n);`  
+    - **Prototipo:** `void *ft_memchr(const void *s, int c, size_t n);`  
     - **Usos en otras funciones:** Puede ser utilizada para buscar en bloques de memoria como en `ft_memcmp`.
 
 15. **`ft_memcmp`**  
     - Compara dos bloques de memoria.  
-    - **Prototipo estándar:** `int memcmp(const void *s1, const void *s2, size_t n);`  
+    - **Prototipo:** `int ft_memcmp(const void *s1, const void *s2, size_t n);`  
     - **Usos en otras funciones:** Puede ser utilizada para comparar bloques de memoria, como en `ft_memchr`.
 
 16. **`ft_strncmp`**  
     - Compara dos cadenas, hasta un número dado de caracteres.  
-    - **Prototipo estándar:** `int strncmp(const char *s1, const char *s2, size_t n);`  
+    - **Prototipo:** `int ft_strncmp(const char *s1, const char *s2, size_t n);`  
     - **Usos en otras funciones:** Puede ser utilizada dentro de `ft_strnstr` para comparar cadenas con límite de longitud.
 
 17. **`ft_atoi`**  
     - Convierte una cadena de caracteres a un número entero.  
-    - **Prototipo estándar:** `int atoi(const char *str);`  
+    - **Prototipo:** `int ft_atoi(const char *str);`  
     - **Usos en otras funciones:** Puede usarse para convertir cadenas a enteros en el proceso de análisis de datos.
 
 18. **`ft_memmove`**  
     - Copia una porción de memoria, manejando correctamente el solapamiento de bloques de memoria.  
-    - **Prototipo estándar:** `void *memmove(void *dest, const void *src, size_t len);`  
+    - **Prototipo:** `void *ft_memmove(void *dest, const void *src, size_t n);`  
     - **Usos en otras funciones:** Se puede usar para mover bloques de memoria en funciones como `ft_memcpy` y `ft_memset`.
 
 19. **`ft_strlcpy`**  
     - Copia una cadena asegurando no sobrepasar el límite de longitud.  
-    - **Prototipo estándar:** `size_t strlcpy(char *dest, const char *src, size_t size);`  
+    - **Prototipo:** `size_t ft_strlcpy(char *dest, const char *src, size_t size);`  
     - **Usos en otras funciones:** Puede ser utilizada en funciones como `ft_strlcat` para concatenar de manera segura cadenas.
 
 20. **`ft_strlcat`**  
     - Concatenación de cadenas asegurando no sobrepasar el límite de longitud.  
-    - **Prototipo estándar:** `size_t strlcat(char *dest, const char *src, size_t size);`  
+    - **Prototipo:** `size_t ft_strlcat(char *dest, const char *src, size_t size);`  
     - **Usos en otras funciones:** Puede usarse en la manipulación de cadenas, especialmente en funciones que concatenan cadenas como `ft_strlcpy`.
 
 21. **`ft_strnstr`**  
     - Busca una subcadena dentro de una cadena, con una longitud máxima.  
-    - **Prototipo estándar:** `char *strnstr(const char *haystack, const char *needle, size_t len);`  
+    - **Prototipo:** `char *strnstr(const char *haystack, const char *needle, size_t len);`  
     - **Usos en otras funciones:** Puede ser utilizada para buscar una subcadena dentro de una cadena de forma eficiente.
 
 22. **`ft_calloc`**  
     - Asigna memoria y la inicializa a cero.  
-    - **Prototipo estándar:** `void *calloc(size_t nmemb, size_t size);`  
+    - **Prototipo:** `void *ft_calloc(size_t num_elements, size_t element_size);`  
     - **Usos en otras funciones:** Se puede usar para inicializar memoria a cero, comúnmente en `ft_strdup`.
 
 23. **`ft_strdup`**  
     - Duplica una cadena, asignando memoria dinámicamente.  
-    - **Prototipo estándar:** `char *strdup(const char *s);`  
+    - **Prototipo:** `char *ft_strdup(const char *s);`  
     - **Usos en otras funciones:** Puede ser utilizada en varias funciones para duplicar cadenas, por ejemplo, en `ft_split`.
 
 ## Parte Obligatoria 2
 
 1. **`ft_putchar_fd`**  
    - Escribe un carácter en un descriptor de archivo.  
-   - **Prototipo estándar:** `void ft_putchar_fd(char c, int fd);`  
+   - **Prototipo:** `void ft_putchar_fd(char c, int fd);`  
    - **Usos en otras funciones:** Puede ser utilizada en la salida de caracteres de manera más personalizada.
 
 2. **`ft_putstr_fd`**  
    - Escribe una cadena en un descriptor de archivo.  
-   - **Prototipo estándar:** `void ft_putstr_fd(char *s, int fd);`  
+   - **Prototipo:** `void ft_putstr_fd(char *s, int fd);`  
    - **Usos en otras funciones:** Utilizada para la salida de cadenas, puede ser usada por otras funciones para escribir cadenas en un archivo o salida estándar.
 
 3. **`ft_putendl_fd`**  
    - Escribe una cadena seguida de un salto de línea en un descriptor de archivo.  
-   - **Prototipo estándar:** `void ft_putendl_fd(char *s, int fd);`  
+   - **Prototipo:** `void ft_putendl_fd(char *s, int fd);`  
    - **Usos en otras funciones:** Similar a `ft_putstr_fd`, pero con salto de línea añadido al final.
 
 4. **`ft_putnbr_fd`**  
    - Escribe un número entero en un descriptor de archivo.  
-   - **Prototipo estándar:** `void ft_putnbr_fd(int n, int fd);`  
+   - **Prototipo:** `void ft_putnbr_fd(int n, int fd);`  
    - **Usos en otras funciones:** Puede ser utilizada para la salida de números enteros en funciones que requieren impresión personalizada.
 
 5. **`ft_itoa`**  
    - Convierte un número entero a su representación en cadena.  
-   - **Prototipo estándar:** `char *itoa(int n);`  
+   - **Prototipo:** `char *ft_itoa(int n);`  
    - **Usos en otras funciones:** Puede ser utilizada cuando sea necesario convertir enteros a cadenas.
 
 6. **`ft_substr`**  
    - Extrae una subcadena de una cadena dada.  
-   - **Prototipo estándar:** `char *substr(const char *s, unsigned int start, size_t len);`  
+   - **Prototipo:** `char *ft_substr(const char *s, unsigned int start, size_t len);`  
    - **Usos en otras funciones:** Puede ser utilizada en funciones que necesiten manipular partes específicas de cadenas.
 
 7. **`ft_strtrim`**  
    - Elimina los caracteres especificados de los extremos de una cadena.  
-   - **Prototipo estándar:** `char *strtrim(char const *s1, char const *set);`  
+   - **Prototipo:** `char *ft_strtrim(char const *s1, char const *set);`  
    - **Usos en otras funciones:** Puede ser utilizada en funciones que necesitan limpiar las cadenas antes de procesarlas.
 
 8. **`ft_striteri`**  
    - Aplica una función a cada carácter de una cadena, permitiendo modificar la cadena.  
-   - **Prototipo estándar:** `void ft_striteri(char *s, void (*f)(unsigned int, char*));`  
+   - **Prototipo:** `void ft_striteri(char *s, void (*f)(unsigned int, char*));`  
    - **Usos en otras funciones:** Se utiliza cuando es necesario modificar una cadena aplicando una función a cada uno de sus caracteres.
 
 9. **`ft_strmapi`**  
    - Aplica una función a cada carácter de una cadena, con su índice, y devuelve una nueva cadena.  
-   - **Prototipo estándar:** `char *ft_strmapi(char const *s, char (*f)(unsigned int, char));`  
+   - **Prototipo:** `char *ft_strmapi(char const *s, char (*f)(unsigned int, char));`  
    - **Usos en otras funciones:** Puede ser utilizada para transformar cadenas de manera más compleja que `ft_striteri`.
 
 10. **`ft_strjoin`**  
     - Une dos cadenas en una nueva cadena.  
-    - **Prototipo estándar:** `char *strjoin(char const *s1, char const *s2);`  
+    - **Prototipo:** `char *ft_strjoin(char const *s1, char const *s2);`  
     - **Usos en otras funciones:** Es utilizada para concatenar dos cadenas y puede ser usada en muchas funciones que requieren la unión de cadenas.
 
 11. **`ft_split`**  
     - Divide una cadena en subcadenas, usando un delimitador.  
-    - **Prototipo estándar:** `char **ft_split(char const *s, char c);`  
+    - **Prototipo:** `char **ft_split(char const *s, char c);`  
     - **Usos en otras funciones:** Se puede usar cuando se necesita dividir una cadena en partes más pequeñas según un delimitador.
 
 ## Parte Bonus y sus definiciones.
 
 1. **`ft_lstnew`**  
    - Crea un nuevo nodo para una lista enlazada.  
-   - **Prototipo estándar:** `t_list *ft_lstnew(void *content);`  
+   - **Prototipo:** `t_list *ft_lstnew(void *content);`  
    - **Usos en otras funciones:** Fundamental para la creación de listas enlazadas.
 
 2. **`ft_lstadd_front`**  
    - Añade un nodo al principio de la lista enlazada.  
-   - **Prototipo estándar:** `void ft_lstadd_front(t_list **lst, t_list *new);`  
+   - **Prototipo:** `void ft_lstadd_front(t_list **lst, t_list *new);`  
    - **Usos en otras funciones:** Se utiliza para agregar nodos al principio de una lista.
 
 3. **`ft_lstsize`**  
    - Devuelve el número de elementos en la lista enlazada.  
-   - **Prototipo estándar:** `int ft_lstsize(t_list *lst);`  
+   - **Prototipo:** `int ft_lstsize(t_list *lst);`  
    - **Usos en otras funciones:** Permite obtener el tamaño de la lista.
 
 4. **`ft_lstlast`**  
    - Devuelve el último nodo de la lista enlazada.  
-   - **Prototipo estándar:** `t_list *ft_lstlast(t_list *lst);`  
+   - **Prototipo:** `t_list *ft_lstlast(t_list *lst);`  
    - **Usos en otras funciones:** Se usa cuando es necesario acceder al último nodo de la lista.
 
 5. **`ft_lstadd_back`**  
    - Añade un nodo al final de la lista enlazada.  
-   - **Prototipo estándar:** `void ft_lstadd_back(t_list **lst, t_list *new);`  
+   - **Prototipo:** `void ft_lstadd_back(t_list **lst, t_list *new);`  
    - **Usos en otras funciones:** Agrega un nodo al final de la lista.
 
 6. **`ft_lstdelone`**  
    - Elimina un nodo de la lista, liberando su memoria.  
-   - **Prototipo estándar:** `void ft_lstdelone(t_list *lst, void (*del)(void*));`  
+   - **Prototipo:** `void ft_lstdelone(t_list *lst, void (*del)(void*));`  
    - **Usos en otras funciones:** Se usa para eliminar nodos de la lista de forma segura.
 
 7. **`ft_lstiter`**  
    - Aplica una función a cada nodo de la lista.  
-   - **Prototipo estándar:** `void ft_lstiter(t_list *lst, void (*f)(void *));`  
+   - **Prototipo:** `void ft_lstiter(t_list *lst, void (*f)(void *));`  
    - **Usos en otras funciones:** Puede ser utilizada para iterar sobre cada nodo de la lista y realizar operaciones en ellos.
 
 8. **`ft_lstclear`**  
    - Elimina todos los nodos de la lista y libera su memoria.  
-   - **Prototipo estándar:** `void ft_lstclear(t_list **lst, void (*del)(void*));`  
+   - **Prototipo:** `void ft_lstclear(t_list **lst, void (*del)(void*));`  
    - **Usos en otras funciones:** Se usa para eliminar toda la lista de forma segura.
 
 9. **`ft_lstmap`**  
    - Crea una nueva lista aplicando una función a cada nodo de la lista original.  
-   - **Prototipo estándar:** `t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));`  
+   - **Prototipo:** `t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));`  
    - **Usos en otras funciones:** Se utiliza para transformar la lista original creando una nueva lista con los resultados de la función aplicada.
 
 ---
