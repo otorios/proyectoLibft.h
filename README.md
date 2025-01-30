@@ -2,7 +2,7 @@
 
 ---
 
-## Índice parte
+## Índice
 
 1. [Descripción del Proyecto y Círculo de Proyectos - Primer Círculo (Pace)](#descripción-del-proyecto-y-círculo-de-proyectos---primer-círculo-pace)
 2. [Propósito del Proyecto](#propósito-del-proyecto)
