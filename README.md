@@ -66,17 +66,17 @@ libft/ Makefile # Script de compilación libft.h # Archivo de cabecera con decla
 
 ## Parte Obligatoria 1
 
-1. #**`ft_isascii`**  
+### **1. ft_isascii**
    - Verifica si un carácter es un carácter ASCII válido.  
    - **Prototipo:** `int ft_isascii(int c);`  
    - **Usos en otras funciones:** No se utiliza directamente en otras funciones, aunque es útil en funciones como `ft_isalpha`, `ft_isalnum`, etc.
 
-2. #`ft_toupper` 
+2. **`ft_toupper`**  
    - Convierte un carácter a mayúsculas.  
    - **Prototipo:** `int ft_tolower(int c);`  
    - **Usos en otras funciones:** Puede ser utilizada dentro de la función `ft_striteri` para modificar los caracteres de una cadena.
 
-3. #ft_tolower
+3. **`ft_tolower`**  
    - Convierte un carácter a minúsculas.  
    - **Prototipo:** `int tolower(int c);`  
    - **Usos en otras funciones:** Similar a `ft_toupper`, puede ser utilizada dentro de funciones como `ft_striteri` para modificar los caracteres de una cadena.
