@@ -10,7 +10,6 @@
 4. [Parte Obligatoria](#parte-obligatoria)
    - [Funciones de la libc a implementar y sus definiciones](#funciones-de-la-libc-a-implementar-y-sus-definiciones)
    - [Parte Obligatoria 1](#parte-obligatoria-1)
-   - [ft_isascii](#ft_isascii)
      | N°  | Función          | N°  | Función          | N°  | Función          | N°  | Función          |
      |---- |---------------- |---- |---------------- |---- |---------------- |---- |---------------- |
      | 1   | [ft_isascii](#ft_isascii)   | 6   | [ft_isalnum](#ft_isalnum)   | 11  | [ft_memcpy](#ft_memcpy)     | 16  | [ft_strrchr](#ft_strrchr)   |
@@ -67,17 +66,17 @@ libft/ Makefile # Script de compilación libft.h # Archivo de cabecera con decla
 
 ## Parte Obligatoria 1
 
-1. **`ft_isascii`**  
+1. #**`ft_isascii`**  
    - Verifica si un carácter es un carácter ASCII válido.  
    - **Prototipo:** `int ft_isascii(int c);`  
    - **Usos en otras funciones:** No se utiliza directamente en otras funciones, aunque es útil en funciones como `ft_isalpha`, `ft_isalnum`, etc.
 
-2. **`ft_toupper`**  
+2. #`ft_toupper` 
    - Convierte un carácter a mayúsculas.  
    - **Prototipo:** `int ft_tolower(int c);`  
    - **Usos en otras funciones:** Puede ser utilizada dentro de la función `ft_striteri` para modificar los caracteres de una cadena.
 
-3. **`ft_tolower`**  
+3. #ft_tolower
    - Convierte un carácter a minúsculas.  
    - **Prototipo:** `int tolower(int c);`  
    - **Usos en otras funciones:** Similar a `ft_toupper`, puede ser utilizada dentro de funciones como `ft_striteri` para modificar los caracteres de una cadena.
